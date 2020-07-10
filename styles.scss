@@ -1,0 +1,741 @@
+@import "./fonts.sass";
+@mixin font($font, $fontstyle, $fontweight, $fontsize, $lineheight, $letterspacing) {
+      font-family: $font;
+      font-style: $fontstyle;
+      font-weight: $fontweight;
+      font-size: $fontsize;
+      line-height: $lineheight;
+      letter-spacing: $letterspacing;
+}
+@mixin fontcolor {
+      color: #367bf5;
+}
+%button {
+      background: #367bf5;
+      color: white;
+      border: unset;
+      border-radius: 6px;
+}
+@mixin button {
+      background: #367bf5;
+      color: white;
+      border: unset;
+      border-radius: 6px;
+}
+@mixin btn {
+      position: relative;
+      padding: 16px 20px;
+      @include font(RT Mono, normal, bold, 18px, 134%, null);
+      margin-top: 32px;
+      @include button;
+}
+@mixin triangle {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-right: 4px solid #f9b53b;
+      border-bottom: 4px solid #f9b53b;
+      border-left: 4px solid transparent;
+      border-radius: 0px 0px 4px 0px;
+}
+@mixin redpoint {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #ffffff;
+      margin: auto;
+}
+@mixin redstar {
+      display: flex;
+      flex: 0 0 16px;
+      height: 16px;
+      background-image: url(./img/redstar.png);
+      background-size: auto;
+      background-attachment: cover;
+      margin: 4px 0 0 16px;
+      .redpoint {
+            @include redpoint();
+      }
+}
+@mixin descr {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      .helptitle {
+            @include font(Inter, normal, 500, 20px, 138%, 0.005em);
+      }
+      .helpdescr {
+            @include font(TT Norms, normal, 500, 16px, 134%, 0.005em);
+            margin-top: 6px;
+      }
+}
+@mixin undernumslide {
+      display: flex;
+      align-items: flex-start;
+      .redstar {
+            @include redstar();
+      }
+      .descr {
+            @include descr();
+      }
+}
+@mixin description {
+      margin: unset;
+      li {
+            list-style: none;
+            margin-top: 20px;
+      }
+      li:first-child {
+            margin-top: unset;
+      }
+      .undernumslide {
+            @include undernumslide();
+      }
+}
+@mixin buttons($val) {
+      top: unset;
+      bottom: 25px;
+      left: $val;
+      background: #004094;
+      border-radius: 50%;
+      padding: 0 9px;
+}
+@mixin undertitle {
+      display: block;
+      text-align: center;
+      @include font(TT Norms, normal, normal, 26px, 128%, 0.01em);
+      margin-top: 18px;
+      color: #202642;
+}
+body {
+      margin: 0;
+      padding: 0;
+}
+main {
+      margin-top: 157px;
+}
+.invitation {
+      display: flex;
+      margin: 0 120px 0;
+      .maiinContent {
+            margin: unset;
+      }
+      .text {
+            margin-right: 177px;
+            .title {
+                  display: block;
+                  @include font(TT Norms-Bold, normal, bold, 48px, 114%, null);
+                  @include fontcolor;
+                  margin: unset;
+                  margin-top: 51px;
+                  span {
+                        color: #f23b53;
+                  }
+            }
+            .undertitle {
+                  display: block;
+                  @include font(TT Norms, normal, normal, 22px, 148%, 0.005em);
+                  @include fontcolor;
+                  margin-top: 18px;
+            }
+            button {
+                  @include btn;
+                  .becomedoctor {
+                        display: none;
+                  }
+            }
+            .tri {
+                  @include triangle;
+            }
+            .underButton {
+                  display: block;
+                  @include font(TT Norms, normal, 500, 16px, 128%, 0.005em);
+                  @include fontcolor;
+                  margin-top: 13px;
+            }
+      }
+}
+.title {
+      display: block;
+      text-align: center;
+      @include font(TT Norms-Bold, normal, normal, 48px, 124%, null);
+      @include fontcolor;
+      margin-top: 128px;
+}
+.undertitle2 {
+      display: block;
+      text-align: center;
+      @include font(TT Norms, normal, normal, 18px, 148%, null);
+      margin: 20px 328px 0;
+}
+.howhelp {
+      display: flex;
+      justify-content: center;
+      margin: 36px 182px 0;
+      .video {
+            iframe {
+                  border-radius: 4px;
+                  border: unset;
+            }
+            button {
+                  display: block;
+                  @include btn();
+                  margin-top: 40px;
+                  .tri {
+                        @include triangle;
+                  }
+            }
+      }
+      .description {
+            @include description();
+      }
+}
+.selection {
+      margin: 88px 120px 0 182px;
+      display: flex;
+      .title {
+            margin-top: unset;
+            text-align: unset;
+      }
+      .selection-list {
+            flex-direction: column;
+            margin-top: 33px;
+            padding: unset;
+            li {
+                  list-style: none;
+                  margin-top: 18px;
+            }
+            li:first-child {
+                  margin-top: unset;
+            }
+            display: flex;
+            .undernumslide {
+                  display: flex;
+                  align-items: flex-start;
+                  .redstar {
+                        @include redstar();
+                        margin-left: unset;
+                  }
+
+                  .descr {
+                        @include descr();
+                        .helptitle {
+                              @include font(TT Norms, normal, 500, 18px, 136%, null);
+                              color: #304b93;
+                        }
+                  }
+            }
+      }
+      .swiper-container {
+            flex: 0 0 620px;
+            min-height: 332px;
+            background: #f5f8fa;
+            border-radius: 12px;
+            .row {
+                  display: flex;
+                  align-items: flex-start;
+                  margin: 40px 0 0 32px;
+                  .doctorinfo {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 500px;
+                        margin-left: 24px;
+                        .position,
+                        .opit {
+                              @include font(TT Norms-Bold, normal, normal, 16px, 136%, 0.01em);
+                              color: #304b93;
+                        }
+                        .fio {
+                              display: block;
+                              margin-top: 14px;
+                              @include font(TT Norms-Bold, normal, 500, 30px, 124%, 0.005em);
+                              color: #0b1635;
+                        }
+                        .opit {
+                              margin-top: 10px;
+                        }
+                        .education {
+                              margin-top: 16px;
+                              @include font(TT Norms, normal, 500, 16px, 144%, null);
+                              span {
+                                    color: #0b1635;
+                              }
+                        }
+                  }
+            }
+            .educationmob {
+                  display: none;
+            }
+            .swiper-pagination {
+                  display: none;
+            }
+            .swiper-button-prev {
+                  @include buttons(155);
+            }
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+                  content: unset;
+            }
+            .swiper-button-next {
+                  @include buttons(217);
+            }
+      }
+}
+.inourteam {
+      margin: 50px 0 0 182px;
+      .title {
+            font-size: 36px;
+            line-height: 114%;
+            text-align: unset;
+            margin: unset;
+      }
+      .undertitle {
+            display: block;
+            width: 45%;
+            margin-top: 14px;
+            @include font(TT Norms, normal, 500, 16px, 134%, 0.005em);
+            color: #202642;
+      }
+      .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            .item {
+                  display: flex;
+                  align-items: center;
+                  flex: 0 0 33%;
+                  margin-top: 20px;
+
+                  span {
+                        margin-left: 16px;
+                        @include font(Inter, normal, 500, 20px, 138%, 0.005em);
+                        color: #304b93;
+                  }
+            }
+      }
+}
+.joinus {
+      button {
+            display: block;
+            @include btn();
+            margin: 64px auto 0;
+            .tri {
+                  @include triangle;
+            }
+      }
+}
+.who-we-need {
+      background: #f5f8fa;
+      margin-top: 48px;
+      .title {
+            padding-top: 48px;
+            margin-top: unset;
+      }
+      .undertitle {
+            @include undertitle();
+            span {
+                  font-weight: 800;
+            }
+      }
+      .we-need-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 23px 116px 0 282px;
+            justify-content: center;
+            .undernumslide {
+                  flex: 0 0 33%;
+                  display: flex;
+                  align-items: center;
+                  margin-top: 32px;
+                  .redstar {
+                        @include redstar();
+                        margin-left: unset;
+                  }
+
+                  .helptitle {
+                        margin-left: 12px;
+                        @include font(TT Norms, normal, 500, 26px, 134%, 0.005em);
+                        color: #202642;
+                  }
+            }
+      }
+      .lastext {
+            display: block;
+            text-align: center;
+            margin: 40px 328px 0;
+            @include font(TT Norms, normal, 500, 18px, 158%, null);
+            color: #304b93;
+      }
+      .joinus {
+            button {
+                  margin: 48px auto 0;
+            }
+      }
+}
+.results {
+      .title {
+            margin-top: 96px;
+      }
+      .undertitle {
+            display: block;
+            @include undertitle();
+            margin: 0 377px 0;
+            font-size: 20px;
+      }
+      .years {
+            display: flex;
+            justify-content: center;
+            margin: 38px 124px 0;
+            div {
+                  margin-left: 64px;
+            }
+            div:first-child {
+                  margin-left: unset;
+            }
+      }
+      .numbs {
+            display: none;
+      }
+}
+@media screen and(min-width:1600px) {
+      body {
+            width: 1440px;
+            margin: 0 auto 0;
+      }
+}
+@media screen and(max-width:414px) {
+      %fontcolor {
+            color: #367bf5;
+      }
+      .mainContent {
+            margin-top: 104px;
+            width: 100%;
+      }
+      .invitation {
+            flex-wrap: wrap;
+            margin: 0 18px 0;
+            justify-content: center;
+            .text {
+                  order: 1;
+                  margin: unset;
+                  .title {
+                        display: block;
+                        text-align: center;
+                        @include font(TT Norms-Bold, normal, bold, 24px, 132%, null);
+                        @include fontcolor;
+                        margin: 0 40px 0;
+                  }
+                  .undertitle {
+                        display: block;
+                        text-align: center;
+                        @include font(TT Norms, normal, normal, 16px, 124%, 0.005em);
+                        @include fontcolor;
+                        margin-top: 18px;
+                        color: #202642;
+                        margin: 8px 27px 0;
+                        span {
+                              display: block;
+                              margin: 8 -26px;
+                        }
+                  }
+                  button {
+                        display: block;
+                        position: relative;
+                        padding: 16px 20px;
+                        @include font(RT Mono, normal, bold, 16px, 134%, null);
+                        margin: 28px auto 0;
+                        @include button;
+                        span {
+                              display: none;
+                        }
+                        .becomedoctor {
+                              display: inline;
+                        }
+                  }
+                  .underButton {
+                        display: block;
+                        text-align: center;
+                        @include font(TT Norms, normal, 500, 14px, 116%, 0.005em);
+                        color: #202642;
+                        margin-top: 16px;
+                  }
+            }
+            img {
+                  display: block;
+                  width: 100%;
+            }
+      }
+      .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            line-height: 132%;
+            margin-top: 64px;
+      }
+      .undertitle2 {
+            font-size: 14px;
+            line-height: 138%;
+            margin: 18px 19px 0;
+      }
+      .howhelp {
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: flex-start;
+            margin: 28px auto 0;
+            .video {
+                  width: 100%;
+                  iframe {
+                        width: 95%;
+                        height: 196px;
+                        display: block;
+                        border-radius: 8px;
+                        border: unset;
+                        margin: 0 auto 0;
+                  }
+                  button {
+                        display: none;
+                  }
+            }
+            .description {
+                  justify-content: flex-start;
+                  padding: unset;
+                  width: 80%;
+                  margin-top: 24px;
+                  .undernumslide {
+                        .descr {
+                              margin-left: 12px;
+                              .helptitle {
+                                    font-family: TT Norms-Bold;
+                                    font-size: 16px;
+                              }
+                              .helpdescr {
+                                    @include font(TT Norms, normal, normal, 14px, 124%, 0.005em);
+                              }
+                        }
+                  }
+            }
+      }
+      .selection {
+            flex-wrap: wrap;
+            margin: 60px 12px 0;
+            .title {
+                  display: flex;
+                  align-items: center;
+                  margin-top: unset;
+                  text-align: center;
+                  font-size: 28px;
+                  line-height: 124%;
+            }
+            .selection-list {
+                  display: none;
+            }
+            .swiper-container {
+                  flex: 0 0 100%;
+                  min-height: 243px;
+                  background: #f5f8fa;
+                  border-radius: 8px;
+                  margin-top: 28px;
+                  .row {
+                        display: flex;
+                        align-items: flex-start;
+                        margin: 24px 0 0 24px;
+                        img {
+                              width: 56px;
+                              height: 56px;
+                        }
+                        .doctorinfo {
+                              display: flex;
+                              flex-direction: column;
+                              max-width: 90%;
+                              margin-left: 24px;
+                              .position,
+                              .opit {
+                                    @include font(TT Norms-Bold, normal, normal, 14px, 136%, 0.01em);
+                                    color: #304b93;
+                              }
+                              .fio {
+                                    display: block;
+                                    margin-top: 10px;
+                                    @include font(TT Norms-Bold, normal, 500, 18px, 124%, 0.005em);
+                                    color: #0b1635;
+                              }
+                              .opit {
+                                    margin-top: 8px;
+                              }
+                              .education {
+                                    display: none;
+                              }
+                        }
+                  }
+                  .educationmob {
+                        display: block;
+                        max-width: 80%;
+                        @include font(TT Norms, normal, 500, 15px, 134%, null);
+                        margin: 16px 0 0 24px;
+                        span {
+                              color: #0b1635;
+                        }
+                  }
+                  .swiper-pagination {
+                        display: block;
+                        background: white;
+                        padding-top: 21px;
+                        bottom: 0;
+                  }
+                  .swiper-button-prev,
+                  .swiper-button-next {
+                        display: none;
+                  }
+            }
+      }
+      .inourteam {
+            margin: 50px 30px 0;
+            .title {
+                  font-size: 24px;
+                  line-height: 124%;
+                  text-align: center;
+                  margin: unset;
+            }
+            .undertitle {
+                  display: block;
+                  width: unset;
+                  margin-top: 14px;
+                  @include font(TT Norms, normal, normal, 14px, 134%, 0.01em);
+                  color: #202642;
+                  text-align: center;
+            }
+            .container {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  margin-top: 4px;
+                  .item {
+                        display: inline-block;
+                        flex: unset;
+                        margin-top: 14px;
+                        span {
+                              font-size: 16px;
+                        }
+                        img {
+                              display: none;
+                        }
+                  }
+                  .item:first-child {
+                        span {
+                              margin-left: unset;
+                        }
+                  }
+            }
+      }
+      .tagalog {
+            margin: 0 30px;
+            span {
+                  display: block;
+                  text-align: center;
+            }
+      }
+      .joinus {
+            button {
+                  display: block;
+                  @include btn();
+                  margin: 48px auto 0;
+                  .tri {
+                        @include triangle;
+                  }
+            }
+      }
+      .who-we-need {
+            background: unset;
+            margin-top: 46px;
+            width: 100%;
+            .title {
+                  padding-top: 50px;
+                  margin: 0 40px 0;
+                  font-size: 34px;
+                  line-height: 138%;
+            }
+            .undertitle {
+                  display: block;
+                  text-align: center;
+                  @include font(TT Norms, normal, normal, 16px, 132%, 0.005em);
+                  margin: 18px 45px 0;
+                  color: #202642;
+                  span {
+                        font-weight: 800;
+                        font-size: 20px;
+                  }
+            }
+            .we-need-list {
+                  display: flex;
+                  flex-wrap: wrap;
+                  margin: 0 0 0 20px;
+                  justify-content: unset;
+                  .undernumslide {
+                        flex: 0 0 100%;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 32px;
+                        .redstar {
+                              @include redstar();
+                              margin-left: unset;
+                        }
+
+                        .helptitle {
+                              margin-left: 16px;
+                              @include font(TT Norms, normal, 500, 22px, 124%, 0.005em);
+                              color: #202642;
+                        }
+                  }
+            }
+            .lastext {
+                  display: none;
+            }
+            .joinus {
+                  button {
+                        margin: 40px auto 0;
+                  }
+            }
+      }
+      .results {
+            .title:first-child {
+                  display: none;
+            }
+            .title {
+                  margin-top: 94px;
+            }
+            .undertitle {
+                  display: none;
+            }
+            .undertitlemob {
+                  @include undertitle();
+                  font-size: 18px;
+                  line-height: 138%;
+                  margin-top: 20px;
+            }
+            .years {
+                  display: none;
+            }
+            .numbs {
+                  margin-top: 32px;
+                  display: block;
+                  height: 390px;
+                  .swiper-container {
+                        width: 250px;
+                        margin: 0 auto 0;
+                        height: auto;
+                        img {
+                              height: 368px;
+                        }
+                        .swiper-pagination {
+                              display: block;
+                              background: white;
+                              bottom: 0;
+                        }
+                  }
+            }
+      }
+}

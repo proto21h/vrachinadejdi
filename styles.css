@@ -1,0 +1,1200 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  src: url("./fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT Norms-Regular";
+  font-style: normal;
+  src: url("./fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT Norms-Bold";
+  font-style: bold;
+  src: url("./fonts/TTNorms-Bold.ttf");
+}
+
+@font-face {
+  font-family: "RT Mono";
+  font-style: normal;
+  src: url("./fonts/PTMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PT Mono-Bold";
+  font-style: normal;
+  src: url("./fonts/PTM75F.ttf");
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("./fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("./fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("./fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 157px;
+}
+
+.invitation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 120px 0;
+}
+
+.invitation .maiinContent {
+  margin: unset;
+}
+
+.invitation .text {
+  margin-right: 177px;
+}
+
+.invitation .text .title {
+  display: block;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 114%;
+  color: #367bf5;
+  margin: unset;
+  margin-top: 51px;
+}
+
+.invitation .text .title span {
+  color: #f23b53;
+}
+
+.invitation .text .undertitle {
+  display: block;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 148%;
+  letter-spacing: 0.005em;
+  color: #367bf5;
+  margin-top: 18px;
+}
+
+.invitation .text button {
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+}
+
+.invitation .text button .becomedoctor {
+  display: none;
+}
+
+.invitation .text .tri {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #f9b53b;
+  border-bottom: 4px solid #f9b53b;
+  border-left: 4px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+}
+
+.invitation .text .underButton {
+  display: block;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 128%;
+  letter-spacing: 0.005em;
+  color: #367bf5;
+  margin-top: 13px;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 128px;
+}
+
+.undertitle2 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 148%;
+  margin: 20px 328px 0;
+}
+
+.howhelp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 36px 182px 0;
+}
+
+.howhelp .video iframe {
+  border-radius: 4px;
+  border: unset;
+}
+
+.howhelp .video button {
+  display: block;
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin-top: 40px;
+}
+
+.howhelp .video button .tri {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #f9b53b;
+  border-bottom: 4px solid #f9b53b;
+  border-left: 4px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+}
+
+.howhelp .description {
+  margin: unset;
+}
+
+.howhelp .description li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.howhelp .description li:first-child {
+  margin-top: unset;
+}
+
+.howhelp .description .undernumslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.howhelp .description .undernumslide .redstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  background-image: url(./img/redstar.png);
+  background-size: auto;
+  background-attachment: cover;
+  margin: 4px 0 0 16px;
+}
+
+.howhelp .description .undernumslide .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+}
+
+.howhelp .description .undernumslide .descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+.howhelp .description .undernumslide .descr .helptitle {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 138%;
+  letter-spacing: 0.005em;
+}
+
+.howhelp .description .undernumslide .descr .helpdescr {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  margin-top: 6px;
+}
+
+.selection {
+  margin: 88px 120px 0 182px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selection .title {
+  margin-top: unset;
+  text-align: unset;
+}
+
+.selection .selection-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 33px;
+  padding: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selection .selection-list li {
+  list-style: none;
+  margin-top: 18px;
+}
+
+.selection .selection-list li:first-child {
+  margin-top: unset;
+}
+
+.selection .selection-list .undernumslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.selection .selection-list .undernumslide .redstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  background-image: url(./img/redstar.png);
+  background-size: auto;
+  background-attachment: cover;
+  margin: 4px 0 0 16px;
+  margin-left: unset;
+}
+
+.selection .selection-list .undernumslide .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+}
+
+.selection .selection-list .undernumslide .descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+.selection .selection-list .undernumslide .descr .helptitle {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 138%;
+  letter-spacing: 0.005em;
+}
+
+.selection .selection-list .undernumslide .descr .helpdescr {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  margin-top: 6px;
+}
+
+.selection .selection-list .undernumslide .descr .helptitle {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136%;
+  color: #304b93;
+}
+
+.selection .swiper-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 620px;
+          flex: 0 0 620px;
+  min-height: 332px;
+  background: #f5f8fa;
+  border-radius: 12px;
+}
+
+.selection .swiper-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px 0 0 32px;
+}
+
+.selection .swiper-container .row .doctorinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  margin-left: 24px;
+}
+
+.selection .swiper-container .row .doctorinfo .position,
+.selection .swiper-container .row .doctorinfo .opit {
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 136%;
+  letter-spacing: 0.01em;
+  color: #304b93;
+}
+
+.selection .swiper-container .row .doctorinfo .fio {
+  display: block;
+  margin-top: 14px;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 124%;
+  letter-spacing: 0.005em;
+  color: #0b1635;
+}
+
+.selection .swiper-container .row .doctorinfo .opit {
+  margin-top: 10px;
+}
+
+.selection .swiper-container .row .doctorinfo .education {
+  margin-top: 16px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 144%;
+}
+
+.selection .swiper-container .row .doctorinfo .education span {
+  color: #0b1635;
+}
+
+.selection .swiper-container .educationmob {
+  display: none;
+}
+
+.selection .swiper-container .swiper-pagination {
+  display: none;
+}
+
+.selection .swiper-container .swiper-button-prev {
+  top: unset;
+  bottom: 25px;
+  left: 155;
+  background: #004094;
+  border-radius: 50%;
+  padding: 0 9px;
+}
+
+.selection .swiper-container .swiper-button-prev::after,
+.selection .swiper-container .swiper-button-next::after {
+  content: unset;
+}
+
+.selection .swiper-container .swiper-button-next {
+  top: unset;
+  bottom: 25px;
+  left: 217;
+  background: #004094;
+  border-radius: 50%;
+  padding: 0 9px;
+}
+
+.inourteam {
+  margin: 50px 0 0 182px;
+}
+
+.inourteam .title {
+  font-size: 36px;
+  line-height: 114%;
+  text-align: unset;
+  margin: unset;
+}
+
+.inourteam .undertitle {
+  display: block;
+  width: 45%;
+  margin-top: 14px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  color: #202642;
+}
+
+.inourteam .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.inourteam .container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  margin-top: 20px;
+}
+
+.inourteam .container .item span {
+  margin-left: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 138%;
+  letter-spacing: 0.005em;
+  color: #304b93;
+}
+
+.joinus button {
+  display: block;
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin: 64px auto 0;
+}
+
+.joinus button .tri {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #f9b53b;
+  border-bottom: 4px solid #f9b53b;
+  border-left: 4px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+}
+
+.who-we-need {
+  background: #f5f8fa;
+  margin-top: 48px;
+}
+
+.who-we-need .title {
+  padding-top: 48px;
+  margin-top: unset;
+}
+
+.who-we-need .undertitle {
+  display: block;
+  text-align: center;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 128%;
+  letter-spacing: 0.01em;
+  margin-top: 18px;
+  color: #202642;
+}
+
+.who-we-need .undertitle span {
+  font-weight: 800;
+}
+
+.who-we-need .we-need-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 23px 116px 0 282px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.who-we-need .we-need-list .undernumslide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32px;
+}
+
+.who-we-need .we-need-list .undernumslide .redstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  background-image: url(./img/redstar.png);
+  background-size: auto;
+  background-attachment: cover;
+  margin: 4px 0 0 16px;
+  margin-left: unset;
+}
+
+.who-we-need .we-need-list .undernumslide .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+}
+
+.who-we-need .we-need-list .undernumslide .helptitle {
+  margin-left: 12px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  color: #202642;
+}
+
+.who-we-need .lastext {
+  display: block;
+  text-align: center;
+  margin: 40px 328px 0;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 158%;
+  color: #304b93;
+}
+
+.who-we-need .joinus button {
+  margin: 48px auto 0;
+}
+
+.results .title {
+  margin-top: 96px;
+}
+
+.results .undertitle {
+  display: block;
+  display: block;
+  text-align: center;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 128%;
+  letter-spacing: 0.01em;
+  margin-top: 18px;
+  color: #202642;
+  margin: 0 377px 0;
+  font-size: 20px;
+}
+
+.results .years {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 38px 124px 0;
+}
+
+.results .years div {
+  margin-left: 64px;
+}
+
+.results .years div:first-child {
+  margin-left: unset;
+}
+
+.results .numbs {
+  display: none;
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    width: 1440px;
+    margin: 0 auto 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .mainContent {
+    margin-top: 104px;
+    width: 100%;
+  }
+  .invitation {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 18px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .invitation .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: unset;
+  }
+  .invitation .text .title {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 132%;
+    color: #367bf5;
+    margin: 0 40px 0;
+  }
+  .invitation .text .undertitle {
+    display: block;
+    text-align: center;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 0.005em;
+    color: #367bf5;
+    margin-top: 18px;
+    color: #202642;
+    margin: 8px 27px 0;
+  }
+  .invitation .text .undertitle span {
+    display: block;
+    margin: 8 -26px;
+  }
+  .invitation .text button {
+    display: block;
+    position: relative;
+    padding: 16px 20px;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 134%;
+    margin: 28px auto 0;
+    background: #367bf5;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+  }
+  .invitation .text button span {
+    display: none;
+  }
+  .invitation .text button .becomedoctor {
+    display: inline;
+  }
+  .invitation .text .underButton {
+    display: block;
+    text-align: center;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 116%;
+    letter-spacing: 0.005em;
+    color: #202642;
+    margin-top: 16px;
+  }
+  .invitation img {
+    display: block;
+    width: 100%;
+  }
+  .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 34px;
+    line-height: 132%;
+    margin-top: 64px;
+  }
+  .undertitle2 {
+    font-size: 14px;
+    line-height: 138%;
+    margin: 18px 19px 0;
+  }
+  .howhelp {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 28px auto 0;
+  }
+  .howhelp .video {
+    width: 100%;
+  }
+  .howhelp .video iframe {
+    width: 95%;
+    height: 196px;
+    display: block;
+    border-radius: 8px;
+    border: unset;
+    margin: 0 auto 0;
+  }
+  .howhelp .video button {
+    display: none;
+  }
+  .howhelp .description {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: unset;
+    width: 80%;
+    margin-top: 24px;
+  }
+  .howhelp .description .undernumslide .descr {
+    margin-left: 12px;
+  }
+  .howhelp .description .undernumslide .descr .helptitle {
+    font-family: TT Norms-Bold;
+    font-size: 16px;
+  }
+  .howhelp .description .undernumslide .descr .helpdescr {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 124%;
+    letter-spacing: 0.005em;
+  }
+  .selection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 60px 12px 0;
+  }
+  .selection .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: unset;
+    text-align: center;
+    font-size: 28px;
+    line-height: 124%;
+  }
+  .selection .selection-list {
+    display: none;
+  }
+  .selection .swiper-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    min-height: 243px;
+    background: #f5f8fa;
+    border-radius: 8px;
+    margin-top: 28px;
+  }
+  .selection .swiper-container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 24px 0 0 24px;
+  }
+  .selection .swiper-container .row img {
+    width: 56px;
+    height: 56px;
+  }
+  .selection .swiper-container .row .doctorinfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 90%;
+    margin-left: 24px;
+  }
+  .selection .swiper-container .row .doctorinfo .position,
+  .selection .swiper-container .row .doctorinfo .opit {
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 136%;
+    letter-spacing: 0.01em;
+    color: #304b93;
+  }
+  .selection .swiper-container .row .doctorinfo .fio {
+    display: block;
+    margin-top: 10px;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 0.005em;
+    color: #0b1635;
+  }
+  .selection .swiper-container .row .doctorinfo .opit {
+    margin-top: 8px;
+  }
+  .selection .swiper-container .row .doctorinfo .education {
+    display: none;
+  }
+  .selection .swiper-container .educationmob {
+    display: block;
+    max-width: 80%;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 134%;
+    margin: 16px 0 0 24px;
+  }
+  .selection .swiper-container .educationmob span {
+    color: #0b1635;
+  }
+  .selection .swiper-container .swiper-pagination {
+    display: block;
+    background: white;
+    padding-top: 21px;
+    bottom: 0;
+  }
+  .selection .swiper-container .swiper-button-prev,
+  .selection .swiper-container .swiper-button-next {
+    display: none;
+  }
+  .inourteam {
+    margin: 50px 30px 0;
+  }
+  .inourteam .title {
+    font-size: 24px;
+    line-height: 124%;
+    text-align: center;
+    margin: unset;
+  }
+  .inourteam .undertitle {
+    display: block;
+    width: unset;
+    margin-top: 14px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 134%;
+    letter-spacing: 0.01em;
+    color: #202642;
+    text-align: center;
+  }
+  .inourteam .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4px;
+  }
+  .inourteam .container .item {
+    display: inline-block;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    margin-top: 14px;
+  }
+  .inourteam .container .item span {
+    font-size: 16px;
+  }
+  .inourteam .container .item img {
+    display: none;
+  }
+  .inourteam .container .item:first-child span {
+    margin-left: unset;
+  }
+  .tagalog {
+    margin: 0 30px;
+  }
+  .tagalog span {
+    display: block;
+    text-align: center;
+  }
+  .joinus button {
+    display: block;
+    position: relative;
+    padding: 16px 20px;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134%;
+    margin-top: 32px;
+    background: #367bf5;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+    margin: 48px auto 0;
+  }
+  .joinus button .tri {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 4px solid #f9b53b;
+    border-bottom: 4px solid #f9b53b;
+    border-left: 4px solid transparent;
+    border-radius: 0px 0px 4px 0px;
+  }
+  .who-we-need {
+    background: unset;
+    margin-top: 46px;
+    width: 100%;
+  }
+  .who-we-need .title {
+    padding-top: 50px;
+    margin: 0 40px 0;
+    font-size: 34px;
+    line-height: 138%;
+  }
+  .who-we-need .undertitle {
+    display: block;
+    text-align: center;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 132%;
+    letter-spacing: 0.005em;
+    margin: 18px 45px 0;
+    color: #202642;
+  }
+  .who-we-need .undertitle span {
+    font-weight: 800;
+    font-size: 20px;
+  }
+  .who-we-need .we-need-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 0 20px;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .who-we-need .we-need-list .undernumslide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 32px;
+  }
+  .who-we-need .we-need-list .undernumslide .redstar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16px;
+            flex: 0 0 16px;
+    height: 16px;
+    background-image: url(./img/redstar.png);
+    background-size: auto;
+    background-attachment: cover;
+    margin: 4px 0 0 16px;
+    margin-left: unset;
+  }
+  .who-we-need .we-need-list .undernumslide .redstar .redpoint {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: auto;
+  }
+  .who-we-need .we-need-list .undernumslide .helptitle {
+    margin-left: 16px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 124%;
+    letter-spacing: 0.005em;
+    color: #202642;
+  }
+  .who-we-need .lastext {
+    display: none;
+  }
+  .who-we-need .joinus button {
+    margin: 40px auto 0;
+  }
+  .results .title:first-child {
+    display: none;
+  }
+  .results .title {
+    margin-top: 94px;
+  }
+  .results .undertitle {
+    display: none;
+  }
+  .results .undertitlemob {
+    display: block;
+    text-align: center;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 128%;
+    letter-spacing: 0.01em;
+    margin-top: 18px;
+    color: #202642;
+    font-size: 18px;
+    line-height: 138%;
+    margin-top: 20px;
+  }
+  .results .years {
+    display: none;
+  }
+  .results .numbs {
+    margin-top: 32px;
+    display: block;
+    height: 390px;
+  }
+  .results .numbs .swiper-container {
+    width: 250px;
+    margin: 0 auto 0;
+    height: auto;
+  }
+  .results .numbs .swiper-container img {
+    height: 368px;
+  }
+  .results .numbs .swiper-container .swiper-pagination {
+    display: block;
+    background: white;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

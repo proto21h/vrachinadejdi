@@ -1,0 +1,220 @@
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="./menu.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="./js/jquery.js"></script>
+      <script src="./js/select2.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+      <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+      <title>Document</title>
+</head>
+
+<body>
+      <div class="navdrawr">
+            <div class="navdrawheader">
+                  <span>Врачи надежды</span>
+                  <img src="./img/close.png" alt="close">
+            </div>
+            <div class="drawerlinks">
+                  <a href="#">Главная</a>
+                  <a href="#">Как это работает</a>
+                  <a href="#">Инструкции</a>
+                  <a href="#">Наша работа</a>
+                  <a href="#">О нас</a>
+                  <a href="#">Контакты</a>
+                  <div><span>Помочь проекту</span></div>
+            </div>
+            <div class="drwrSocIcons">
+                  <span>Следите за нами в социальных сетях</span>
+                  <div class="icns">
+                        <img src="img/facebookDr.png" alt="facebook">
+                        <img src="img/instagramDr.png" alt="instagram">
+                        <img src="img/youtubrDr.png" alt="youtube">
+                        <img src="img/odnokl.png" alt="">
+                  </div>
+            </div>
+      </div>
+      <!-- nav -->
+      <div class="bg_main">
+            <header class="lp-header">
+
+                  <nav class="navSection">
+
+                        <div class="hamburger">
+                              <div class="div1"></div>
+                              <div class="div2"></div>
+                              <div class="div3"></div>
+                        </div>
+
+                        <div class="logoSection">
+                              <img src="img/logo.png" />
+                              <span>Врачи <br />
+                                    надежды</span>
+                        </div>
+                        <ul>
+                              <div class="menuLinks">
+                                    <li><a class="menu__links-item" href="#"
+                                                onclick="$('html, body').animate({scrollTop: $(`.underNavBlock`).offset().top-100}, 500);">Кто
+                                                мы</a></li>
+                                    <li><a class="menu__links-item" href="#"
+                                                onclick="$('html, body').animate({scrollTop: $(`.howWeHelpTitle`).offset().top-100}, 500);">Как
+                                                мы помогаем</a></li>
+                                    <li><a class="menu__links-item" href="#"
+                                                onclick="$('html, body').animate({scrollTop: $(`.workInNum`).offset().top-100}, 500);">Показатели</a>
+                                    </li>
+                                    <li><a class="menu__links-item" href="#"
+                                                onclick="$('html, body').animate({scrollTop: $(`.patientsHistory`).offset().top-100}, 500);">Истории</a>
+                                    </li>
+                                    <li><a class="menu__links-item" href="#"
+                                                onclick="$('html, body').animate({scrollTop: $(`.whyHelpBlock .title`).offset().top-100}, 500);">Благотворители</a>
+                                    </li>
+                                    <li><a class="menu__links-item" href="#"
+                                                onclick="$('html, body').animate({scrollTop: $(`.anyqstnTitle`).offset().top}, 500);">Контакты</a>
+                                    </li>
+                              </div>
+                              <div>
+                                    <li class="menuButtons">
+                                          <a href="#"><span>НКО</span></a>
+                                    </li>
+                              </div>
+                              <div>
+                                    <li class="menuButtons">
+                                          <a href="#"><span>Врачи</span></a>
+                                    </li>
+                              </div>
+                        </ul>
+
+                  </nav>
+            </header>
+      </div>
+      <main class="mainContent">
+            <div class="invitation">
+                  <div class="text">
+                        <span class="title">
+                              Приглашаем Врачей с <span>Живым сердцем</span> в команду!
+                        </span>
+                        <span class="undertitle">
+                              Врачи Надежды – это волонтёрское сообщество медицинских экспертов со всей России. <span>Мы
+                                    помогаем
+                                    установить диагноз, составить план лечения и найти клинику.</span>
+                        </span>
+                        <button>
+                              <span>Посмотрите видео</span><span class="becomedoctor">Стать Врачем Надежды</span>
+                              <div class="tri"></div>
+                        </button>
+                        <span class="underButton">
+                              Без отрыва от основной деятельности
+                        </span>
+                  </div>
+                  <img src="./img/Врачи.svg">
+            </div>
+            <span class="title">Как помогают Врачи Надежды</span>
+            <span class="undertitle2">Тысячи подопечных Благотворительных Фондов нуждаются в квалифицированной
+                  диагностике,
+                  внимательном отношении к истинной причине болезни, а также в экспертном подборе клиник, в которых
+                  действительно вылечат.</span>
+            <div class="howhelp">
+                  <div class="video">
+                        <iframe src="https://www.youtube.com/embed/Dw-RIuz3_X8" frameborder="0"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen width="516px" height="328px"></iframe>
+                        <button>
+                              <span>Посмотрите видео</span>
+                              <div class="tri"></div>
+                        </button>
+                  </div>
+                  <ul id="helplist" class="description">
+                  </ul>
+            </div>
+            <div class="selection">
+                  <div class="leftselection">
+                        <span class="title">
+                              Тщательно отбираем врачей в команду
+                        </span>
+
+                        <ul id="selection-list" class="selection-list"></ul>
+                  </div>
+                  <div class="swiper-container">
+                        <div id="doctorinfo" class="swiper-wrapper"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"><img src="./img/Vector.png" alt="" /></div>
+                        <div class="swiper-button-next"><img src="./img/Next.png" alt="" /></div>
+                  </div>
+            </div>
+            <div class="inourteam">
+                  <span class="title">В нашей команде уже 87 врачей</span>
+                  <span class="undertitle">В составе нашего проекта только действующие специалисты доказательной
+                        медицины, работающие в системе здравоохранения. </span>
+                  <div id="container" class="container"></div>
+            </div>
+            <div class="joinus">
+                  <button>
+                        <span>Присоединяйтесь к нам</span>
+                        <div class="tri"></div>
+                  </button>
+            </div>
+            <div class="who-we-need">
+                  <span class="title">Кто сейчас нам нужен в команду</span>
+                  <span class="undertitle">Приглашаем врачей всех профилей,<span>но особенно в команде сейчас
+                              нужны:</span> </span>
+                  <div id="we-need-list" class="we-need-list"></div>
+                  <span class="lastext">Людей, которые готовы профессионально, но при этом душевно и внимательно
+                        помогать другим –
+                        независимо от их социального статуса и тяжести заболевания.</span>
+                  <div class="joinus">
+                        <button>
+                              <span>Оставить заявку</span>
+                              <div class="tri"></div>
+                        </button>
+                  </div>
+            </div>
+            <div class="results"><span class="title">Наши показатели</span>
+                  <span class="title">Наша работа в цифрах</span>
+                  <span class="undertitle">Но мы не только оказываем экспертную помощь – а вселяем даже в самых тяжёлых
+                        пациентов – Надежду</span>
+                  <span class="undertitlemob">С 2017 года<span style="color: #367BF5;">"Врачи Надежды"</span></span>
+
+
+                  <div class="years">
+                        <div>
+                              <img src="./img/3years.png" />
+                        </div>
+                        <div>
+                              <img src="./img/2750.png" />
+                        </div>
+                        <div>
+                              <img src="./img/7funds.png" />
+                        </div>
+                        <div>
+                              <img src="./img/89doctors.png" />
+                        </div>
+                  </div>
+                  <div class="numbs">
+                        <div class="swiper-container">
+                              <div class="swiper-wrapper">
+                                    <div class="swiper-slide"> <img src="./img/3years.png" /></div>
+                                    <div class="swiper-slide"> <img src="./img/2750.png" /></div>
+                                    <div class="swiper-slide"><img src="./img/7funds.png" /></div>
+                                    <div class="swiper-slide"><img src="./img/89doctors.png" /></div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                        </div>
+                  </div>
+            </div>
+
+
+      </main>
+      <script type="text/babel" src="./js/doctors.js"></script>
+</body>
+
+
+</html>

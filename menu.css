@@ -1,0 +1,332 @@
+a {
+      text-decoration: none;
+}
+
+.bg_main {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      background: white;
+      width: 100%;
+      box-shadow: 0px 4px 14px rgba(88, 119, 174, 0.14);
+}
+
+.wantHelpButton {
+      position: relative;
+      margin: 40px auto;
+      width: 310px;
+      height: 56px;
+      background: #367bf5;
+      border-radius: 6px;
+      color: white;
+      font-family: "PT Mono";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 134%;
+}
+
+.triangle {
+      border-bottom: solid 6px #fca80e;
+      border-right: solid 6px #fca80e;
+      border-left: solid 6px transparent;
+      border-top: solid 6px transparent;
+      border-radius: 0 0 3px 0;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+}
+
+.tellAboutUS {
+      display: block;
+      margin-top: 31px;
+      font-family: TT Norms-Bold;
+      font-size: 18px;
+      line-height: 118%;
+}
+
+.navSection {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      position: relative;
+}
+
+.navdrawr {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: translateX(-100%);
+      transition: transform 2s;
+      z-index: 2;
+      font-family: TT Norms;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 138%;
+      /* or 30px */
+      letter-spacing: 0.005em;
+      /* Темно темно синий */
+      color: #242f65;
+      overflow: hidden;
+}
+
+.drawerlinks {
+      margin: 40px 0 0 24px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      align-items: start;
+}
+
+.drawerlinks a {
+      color: #242f65;
+      margin-top: 20px;
+}
+
+.drawerlinks a:first-child {
+      color: #242f65;
+      margin-top: unset;
+}
+
+.navdrawheader {
+      background: #ffffff;
+      border-bottom: 1px solid rgba(0, 64, 148, 0.3);
+}
+
+.navdrawheader span {
+      display: block;
+      padding: 22px 0 22px 24px;
+      font-family: TT Norms-Bold;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      /* Темно синий */
+      color: #004094;
+}
+
+.navdrawheader img {
+      position: fixed;
+      top: 26px;
+      right: 22px;
+}
+
+.drawerlinks > div {
+      display: table;
+      font-family: PT Mono;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 134%;
+      color: #ffffff;
+      background: #367bf5;
+      border-radius: 4px;
+      margin-top: 18px;
+}
+
+.drawerlinks > div span {
+      display: table;
+      margin: 11px;
+}
+
+.drwrSocIcons img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+}
+
+.drwrSocIcons {
+      position: fixed;
+      width: 100%;
+      bottom: 37px;
+      font: 500 18px TT Norms;
+      color: rgba(35, 44, 87, 0.95);
+}
+
+.drwrSocIcons span {
+      display: block;
+      text-align: center;
+}
+
+.icns {
+      margin: 26px 28px 0;
+      display: flex;
+      justify-content: space-between;
+}
+
+.navSection ul {
+      margin-left: 131px;
+      padding: 6px 0 18px 0;
+}
+
+.navSection .hamburger {
+      display: none;
+}
+
+.navSection .logoSection {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+}
+
+.navSection .logoSection span {
+      font-family: TT Norms-Bold;
+      font-style: normal;
+      font-weight: normal;
+      color: #004094;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 114%;
+      letter-spacing: 0.03em;
+      margin-left: 15px;
+}
+
+.navSection ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+      flex: wrap;
+}
+
+.navSection ul .menuLinks li {
+      list-style: none;
+      display: inline;
+}
+
+.navSection ul .menuLinks li a {
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 136%;
+      color: #304b93;
+      text-decoration: none;
+      margin-left: 24px;
+}
+
+.navSection .menuButtons {
+      list-style: none;
+      display: inline;
+      background: #d6e5ff;
+      border-radius: 4px;
+      padding: 5px;
+      margin: 10px;
+}
+
+.navSection .menuButtons a {
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 136%;
+      color: #304b93;
+      text-decoration: none;
+      margin: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+      .navSection ul {
+            padding: 6px 0 18px 0;
+      }
+      .navSection .logoSection {
+            margin-left: 62px;
+            margin-bottom: 3px;
+      }
+}
+@media screen and (max-width: 1280px) {
+      .navSection ul {
+            margin-left: unset;
+      }
+      .navSection .logoSection {
+            margin-left: unset;
+      }
+}
+@media only screen and (max-width: 768px) {
+      .lp-header {
+            width: 100%;
+      }
+      .navSection {
+            padding: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+            justify-content: unset;
+            -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            height: 64px;
+      }
+      .navSection .hamburger {
+            display: block;
+            margin: 5px 20px;
+      }
+      .navSection .hamburger .div1 {
+            width: 22px;
+            height: 2px;
+            background: #173c85;
+      }
+      .navSection .hamburger .div2 {
+            width: 12px;
+            height: 2px;
+            margin-top: 4px;
+            background: #173c85;
+      }
+      .navSection .hamburger .div3 {
+            width: 17px;
+            margin-top: 4px;
+            height: 2px;
+            background: #173c85;
+      }
+      .navSection .logoSection {
+            margin: 0;
+            margin-left: 2px;
+      }
+      .navSection .logoSection img {
+            width: 26px;
+            height: 20px;
+      }
+      .navSection .logoSection span {
+            display: none;
+      }
+      .navSection ul {
+            position: absolute;
+            right: 16px;
+            margin: 0;
+            padding: unset;
+      }
+      .navSection .menuLinks {
+            position: absolute;
+            left: 0;
+            margin: 0;
+            display: none;
+      }
+      .navSection ul .menuButtons {
+            border-radius: unset;
+            background: unset;
+            margin: 0 5px;
+      }
+      .navSection ul .menuButtons a {
+            margin: 0;
+      }
+}
