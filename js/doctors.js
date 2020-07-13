@@ -75,6 +75,22 @@ const AboutDoctor = () => {
       </React.Fragment>
 }
 ReactDOM.render(<AboutDoctor />, document.getElementById('doctorinfo'))
+const NKOSlide = () => {
+      let nkoWorkers = [{ name: "Гашимов Заур", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать" }, { name: "Кибирова Диана", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать " }, { name: "Османов Тамерлан", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать " },]
+      return <React.Fragment>
+            {nkoWorkers.map(volunteer => <div class="swiper-slide">
+                  <div class="nko-worker">
+                        <iframe src="https://www.youtube.com/embed/Dw-RIuz3_X8" frameborder="0"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen width="360px" height="242px"></iframe>
+                        <span class="nko-worker-name">{volunteer.name}</span>
+                        <span class="nko-worker-description">{volunteer.descr}</span>
+                  </div>
+            </div>
+            )}
+      </React.Fragment>
+}
+ReactDOM.render(<NKOSlide />, document.getElementById('nko-slide'))
 var mySwiper = new Swiper('.swiper-container', {
       loop: true,
       watchOverflow: true,
@@ -121,3 +137,33 @@ const WeNeedList = () => {
       </React.Fragment>
 }
 ReactDOM.render(<WeNeedList names={list} />, document.getElementById('we-need-list'))
+const NKO = () => {
+      let nkoWorkers = [{ name: "Гашимов Заур", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать" }, { name: "Кибирова Диана", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать " }, { name: "Османов Тамерлан", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать " },]
+      return <React.Fragment>
+            {nkoWorkers.map(volunteer => <div class="nko-worker">
+                  <iframe src="https://www.youtube.com/embed/Dw-RIuz3_X8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen width="360px" height="242px"></iframe>
+                  <span class="nko-worker-name">{volunteer.name}</span>
+                  <span class="nko-worker-description">{volunteer.descr}</span>
+            </div>)}
+      </React.Fragment>
+}
+ReactDOM.render(<NKO />, document.getElementById('nko'))
+const OurPatients = () => {
+      let nkoWorkers = [{ name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" }, { name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" }, { name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" },]
+      return <React.Fragment>
+            {nkoWorkers.map(volunteer => <div class="nko-worker">
+                  <iframe src="https://www.youtube.com/embed/Dw-RIuz3_X8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen width="360px" height="207px"></iframe>
+                  <span class="nko-worker-name">Проблема</span>
+                  <span class="nko-worker-description">{volunteer.descr}</span>
+                  <div class="patient-name">
+                        <img src="https://www.w3schools.com/howto/img_avatar.png" width="32px" height="32px" />
+                        <span>{volunteer.name}</span>
+                  </div>
+            </div>)}
+      </React.Fragment>
+}
+ReactDOM.render(<OurPatients />, document.getElementById('patients'))

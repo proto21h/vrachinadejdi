@@ -108,7 +108,37 @@
       text-align: center;
       @include font(TT Norms, normal, normal, 26px, 128%, 0.01em);
       margin-top: 18px;
+
       color: #202642;
+}
+@mixin title($top) {
+      display: block;
+      text-align: center;
+      @include font(TT Norms-Bold, normal, normal, 48px, 124%, null);
+      @include fontcolor;
+      margin-top: $top;
+}
+@mixin nko-worker($left) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: $left;
+      iframe {
+            border-radius: 12px;
+      }
+      .nko-worker-name {
+            @include font(TT Norms-Bold, normal, bold, 24px, 124%, 0.005em);
+            color: #324883;
+            text-align: center;
+            margin-top: 28px;
+            color: #324883;
+      }
+      .nko-worker-description {
+            @include font(TT Norms, normal, normal, 16px, 134%, 0.005em);
+            color: #324883;
+            text-align: center;
+            margin-top: 28px;
+      }
 }
 body {
       margin: 0;
@@ -379,11 +409,17 @@ main {
       .title {
             margin-top: 96px;
       }
+      .title:nth-child(2) {
+            display: none;
+      }
       .undertitle {
             display: block;
             @include undertitle();
             margin: 0 377px 0;
             font-size: 20px;
+      }
+      .undertitlemob {
+            display: none;
       }
       .years {
             display: flex;
@@ -398,6 +434,140 @@ main {
       }
       .numbs {
             display: none;
+      }
+      .after-numbersmob {
+            li {
+                  list-style: none;
+                  margin-top: 22px;
+                  span {
+                        @include font(TT Norms, normal, 500, 20px, 124%, 0.005em);
+                  }
+            }
+            li:first-child {
+                  margin-top: unset;
+            }
+
+            display: none;
+      }
+}
+.partners-title {
+      @include title(113px);
+      margin: 113px 20px 0;
+}
+.partnersWrappeGr {
+      margin: 48px 132px;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 32px;
+      justify-content: center;
+      .partnersItemGr {
+            display: flex;
+            background: #f5f8fa;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            padding: 75px;
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 124%;
+            color: #304b93;
+      }
+}
+.nko-titles {
+      .nko-title {
+            @include title(90);
+            margin: 90px 361px 0;
+      }
+      .nko-title:nth-child(2) {
+            display: none;
+      }
+}
+
+.nko {
+      display: flex;
+      margin: 48px 140px 0;
+      .nko-worker {
+            @include nko-worker(40);
+      }
+      .nko-worker:first-child {
+            margin-left: unset;
+      }
+}
+.nko-slides {
+      display: none;
+      .swiper-container {
+            width: 100%;
+            height: 420px;
+            margin-top: 32px;
+            .nko-worker {
+                  @include nko-worker(0);
+                  iframe {
+                        width: 95%;
+                        display: block;
+                  }
+                  .nko-worker-description {
+                        display: block;
+                        width: 95%;
+                  }
+            }
+            .swiper-pagination {
+                  top: 410px;
+            }
+      }
+}
+.history {
+      .title {
+            @include title(90);
+      }
+      .undertitle {
+            display: block;
+            @include font(TT Norms, normal, normal, 18px, 136%, 0.005em);
+            color: #0b1635;
+            margin-top: 20px;
+            text-align: center;
+      }
+      .patients {
+            display: flex;
+            margin: 48px 140px 0;
+            .nko-worker {
+                  @include nko-worker(48);
+                  iframe {
+                        border-radius: unset;
+                        border-top-left-radius: 12px;
+                        border-top-right-radius: 12px;
+                  }
+                  align-items: flex-start;
+                  .nko-worker-name {
+                        display: block;
+                        margin: 16px 0 0 15px;
+                        @include font(TT Norms, normal, 500, 18px, 148%, 0.005em);
+                        color: #004094;
+                  }
+                  .nko-worker-description {
+                        text-align: unset;
+                        @include font(TT Norms, normal, 500, 18px, 148%, 0.005em);
+                        color: #0b1635;
+                        margin: 8px 0 0 15px;
+                  }
+                  .patient-name {
+                        display: flex;
+                        align-items: center;
+                        margin: 16px 0 0 16px;
+                        img {
+                              border-radius: 50%;
+                        }
+                        span {
+                              margin-left: 14px;
+                              @include font(TT Norms, normal, 500, 16px, 138%, 0.005em);
+                              color: #0b1635;
+                        }
+                  }
+            }
+            .nko-worker:first-child {
+                  margin-left: unset;
+            }
       }
 }
 @media screen and(min-width:1600px) {
@@ -704,6 +874,9 @@ main {
             .title:first-child {
                   display: none;
             }
+            .title:nth-child(2) {
+                  display: block;
+            }
             .title {
                   margin-top: 94px;
             }
@@ -737,5 +910,57 @@ main {
                         }
                   }
             }
+            .after-numbersmob {
+                  display: block;
+                  padding: unset;
+                  margin: 35px 64px 0 16px;
+                  li {
+                        span {
+                              .life-hearts {
+                                    color: #f23b53;
+                              }
+                        }
+                  }
+            }
+      }
+      .partners-title {
+            font-size: 34px;
+            line-height: 134%;
+      }
+      .partnersWrappeGr {
+            margin: 24px 12px 0;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 4px;
+            justify-content: center;
+            .partnersItemGr {
+                  background: #f5f8fa;
+                  border-radius: unset;
+                  margin: 4px;
+                  padding: 55px 24px;
+                  font-size: unset;
+                  span {
+                        text-align: center;
+                  }
+            }
+      }
+      .nko-titles {
+            .nko-title:first-child {
+                  display: none;
+            }
+            .nko-title:nth-child(2) {
+                  display: block;
+                  font-size: 34px;
+                  line-height: 124%;
+                  margin: 72px 7px 0;
+            }
+      }
+
+      .nko {
+            display: none;
+      }
+
+      .nko-slides {
+            display: block;
       }
 }
