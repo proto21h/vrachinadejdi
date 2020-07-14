@@ -1,4 +1,15 @@
 'use strict'
+var btn = document.querySelector(".hamburger")
+btn.addEventListener('click', () => {
+      document.body.addEventListener('touchstart', function (e) { e.preventDefault(); });
+      document.body.style.overflow = 'hidden';
+      document.querySelector("body > div.navdrawr").style.transform = "translateX(0)";
+})
+
+$('.navdrawheader, img').click(function () {
+      $('html, body').css('overflowY', 'auto');
+      $('.navdrawr').css('transform', 'translateX(-100%)');
+});
 const Hello = () => {
       let names = ["Средний стаж 7 лет", "Вторая строчка 2", "Третья строчка 3"]
       return <React.Fragment>
@@ -91,6 +102,24 @@ const NKOSlide = () => {
       </React.Fragment>
 }
 ReactDOM.render(<NKOSlide />, document.getElementById('nko-slide'))
+// const PatientsSlide = () => {
+//       let nkoWorkers = [{ name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" }, { name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" }, { name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" },]
+//       return <React.Fragment>
+//             {nkoWorkers.map(volunteer => <div class="swiper-slide"><div class="nko-worker">
+//                   <iframe src="https://www.youtube.com/embed/Dw-RIuz3_X8" frameborder="0"
+//                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+//                         allowfullscreen width="360px" height="207px"></iframe>
+//                   <span class="nko-worker-name">Проблема</span>
+//                   <span class="nko-worker-description">{volunteer.descr}</span>
+//                   <div class="patient-name">
+//                         <img src="https://www.w3schools.com/howto/img_avatar.png" width="32px" height="32px" />
+//                         <span>{volunteer.name}</span>
+//                   </div>
+//             </div></div>)}
+//       </React.Fragment>
+
+// }
+// ReactDOM.render(<PatientsSlide />, document.getElementById('patient-slide'))
 var mySwiper = new Swiper('.swiper-container', {
       loop: true,
       watchOverflow: true,
@@ -122,9 +151,9 @@ const InOurTeam = () => {
 }
 ReactDOM.render(<InOurTeam />, document.getElementById('container'))
 let list = ["Урологи", "Педиатры", "Ортопеды-травматологи", "Гинекологи", "Урологи", "Неврологи", "Отолорингологи", "Инфекционисты", "Ортопеды-травматологи"]
-const WeNeedList = () => {
+const WeNeedList = ({ names }) => {
       return <React.Fragment>
-            {list.map(position => <div class='undernumslide'>
+            {names.map(position => <div class='undernumslide'>
                   <div class='redstar'>
                         <div class='redpoint'></div>
                   </div>
@@ -150,20 +179,49 @@ const NKO = () => {
       </React.Fragment>
 }
 ReactDOM.render(<NKO />, document.getElementById('nko'))
-const OurPatients = () => {
-      let nkoWorkers = [{ name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" }, { name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" }, { name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" },]
+// const OurPatients = () => {
+//       let nkoWorkers = [{ name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" }, { name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" }, { name: "Алиев Али", descr: "Невозможность найти специалистов,пройти обследование и собраться на операцию" },]
+//       return <React.Fragment>
+//             {nkoWorkers.map(volunteer => <div class="nko-worker">
+//                   <iframe src="https://www.youtube.com/embed/Dw-RIuz3_X8" frameborder="0"
+//                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+//                         allowfullscreen width="360px" height="207px"></iframe>
+//                   <span class="nko-worker-name">Проблема</span>
+//                   <span class="nko-worker-description">{volunteer.descr}</span>
+//                   <div class="patient-name">
+//                         <img src="https://www.w3schools.com/howto/img_avatar.png" width="32px" height="32px" />
+//                         <span>{volunteer.name}</span>
+//                   </div>
+//             </div>)}
+//       </React.Fragment>
+// }
+// ReactDOM.render(<OurPatients />, document.getElementById('patients'))
+let actions = ["Если вы – врач с Живым сердцем и готовы помогать людям.", "Если у вас достойная репутация и положительные отзывы.", "Если вы можете провести 3 консультации в неделю.", "Если вы пользуетесь смартфоном или планшетом.", "Если у вас есть регулярный доступ в интернет."]
+ReactDOM.render(<WeNeedList names={actions} />, document.getElementById('become-list'))
+const QAs = () => {
+      const [state, setstate] = React.useState({
+            answersAreShown: [],
+            questions: [{ q: "А ещё базовые сценарии.", a: "Имеется спорная точка зрения, гласящая примерно следующее:непосредственные участники технического прогресса являются только методом политического участия и своевременно верифицированы! Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий, в своём классическом представлении, допускает внедрение анализа существующих паттернов поведения." }, { q: "А ещё базовые сценарии.", a: "Имеется спорная точка зрения, гласящая примерно следующее:непосредственные участники технического прогресса являются только методом политического участия и своевременно верифицированы! Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий, в своём классическом представлении, допускает внедрение анализа существующих паттернов поведения." }, { q: "А ещё базовые сценарии.", a: "Имеется спорная точка зрения, гласящая примерно следующее:непосредственные участники технического прогресса являются только методом политического участия и своевременно верифицированы! Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий, в своём классическом представлении, допускает внедрение анализа существующих паттернов поведения." }]
+      })
+      const showAnswer = (e, index) => {
+            let list = state.answersAreShown
+            list[index] = !list[index]
+            setstate(state => ({ ...state, answerAreShown: list }))
+      }
+      React.useEffect(() => {
+            let listOfOpened = []
+            setstate(state => ({ ...state, answersAreShown: listOfOpened }))
+      }, [])
       return <React.Fragment>
-            {nkoWorkers.map(volunteer => <div class="nko-worker">
-                  <iframe src="https://www.youtube.com/embed/Dw-RIuz3_X8" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen width="360px" height="207px"></iframe>
-                  <span class="nko-worker-name">Проблема</span>
-                  <span class="nko-worker-description">{volunteer.descr}</span>
-                  <div class="patient-name">
-                        <img src="https://www.w3schools.com/howto/img_avatar.png" width="32px" height="32px" />
-                        <span>{volunteer.name}</span>
+            {state.questions.map((question, index) => <div id="answers-list" class="answers-list">
+                  <div class="qa">
+                        <span class="question">А ещё базовые сценарии.</span>
+                        <div class="plus" onClick={(e) => showAnswer(e, index)}><img src="./img/plusqa.png" /></div>
                   </div>
+                  {state.answersAreShown[index] ? <div class="answer-block"><span>{question.a}</span>
+                  </div> : null}
+
             </div>)}
       </React.Fragment>
 }
-ReactDOM.render(<OurPatients />, document.getElementById('patients'))
+ReactDOM.render(<QAs />, document.getElementById('answers'))

@@ -666,6 +666,7 @@ main {
 }
 
 .spendsContainer {
+    width: 1200px;
     display: flex;
     justify-content: center;
     margin: 32px 0 20px 39px;
@@ -688,6 +689,7 @@ main {
 
 .spendsText {
     margin-left: 24px;
+    width: 697px;
     font-family: TT Norms;
     font-style: normal;
     font-weight: normal;
@@ -2251,7 +2253,7 @@ textarea {
     }
     .spendsWrapper {
         display: table;
-        margin: 0 224px;
+        margin: 0 auto;
         background: #f5f8fa;
         overflow: auto;
         border-bottom: 2px solid rgba(47, 73, 140, 0.12);
@@ -2281,7 +2283,12 @@ textarea {
 }
 
 /*ноутбуки */
-
+@media screen and (min-width: 1500px) {
+    body {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 1280px) {
     .navSection ul {
         margin-left: unset;
@@ -2340,7 +2347,7 @@ textarea {
         margin: 0;
     }
     .spendsWrapper {
-        margin: 0 124px;
+        margin: 0 auto;
     }
     .partnersBlockGr {
         display: block;

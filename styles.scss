@@ -338,7 +338,7 @@ main {
                   align-items: center;
                   flex: 0 0 33%;
                   margin-top: 20px;
-
+                  border: unset;
                   span {
                         margin-left: 16px;
                         @include font(Inter, normal, 500, 20px, 138%, 0.005em);
@@ -400,6 +400,7 @@ main {
             color: #304b93;
       }
       .joinus {
+            padding-bottom: 48px;
             button {
                   margin: 48px auto 0;
             }
@@ -569,398 +570,281 @@ main {
                   margin-left: unset;
             }
       }
-}
-@media screen and(min-width:1600px) {
-      body {
-            width: 1440px;
-            margin: 0 auto 0;
-      }
-}
-@media screen and(max-width:414px) {
-      %fontcolor {
-            color: #367bf5;
-      }
-      .mainContent {
-            margin-top: 104px;
-            width: 100%;
-      }
-      .invitation {
-            flex-wrap: wrap;
-            margin: 0 18px 0;
-            justify-content: center;
-            .text {
-                  order: 1;
-                  margin: unset;
-                  .title {
-                        display: block;
-                        text-align: center;
-                        @include font(TT Norms-Bold, normal, bold, 24px, 132%, null);
-                        @include fontcolor;
-                        margin: 0 40px 0;
-                  }
-                  .undertitle {
-                        display: block;
-                        text-align: center;
-                        @include font(TT Norms, normal, normal, 16px, 124%, 0.005em);
-                        @include fontcolor;
-                        margin-top: 18px;
-                        color: #202642;
-                        margin: 8px 27px 0;
-                        span {
-                              display: block;
-                              margin: 8 -26px;
-                        }
-                  }
-                  button {
-                        display: block;
-                        position: relative;
-                        padding: 16px 20px;
-                        @include font(RT Mono, normal, bold, 16px, 134%, null);
-                        margin: 28px auto 0;
-                        @include button;
-                        span {
-                              display: none;
-                        }
-                        .becomedoctor {
-                              display: inline;
-                        }
-                  }
-                  .underButton {
-                        display: block;
-                        text-align: center;
-                        @include font(TT Norms, normal, 500, 14px, 116%, 0.005em);
-                        color: #202642;
-                        margin-top: 16px;
-                  }
-            }
-            img {
-                  display: block;
-                  width: 100%;
-            }
-      }
-      .title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 34px;
-            line-height: 132%;
-            margin-top: 64px;
-      }
-      .undertitle2 {
-            font-size: 14px;
-            line-height: 138%;
-            margin: 18px 19px 0;
-      }
-      .howhelp {
-            flex-wrap: wrap;
-            width: 100%;
-            justify-content: flex-start;
-            margin: 28px auto 0;
-            .video {
-                  width: 100%;
-                  iframe {
-                        width: 95%;
-                        height: 196px;
-                        display: block;
-                        border-radius: 8px;
-                        border: unset;
-                        margin: 0 auto 0;
-                  }
-                  button {
-                        display: none;
-                  }
-            }
-            .description {
-                  justify-content: flex-start;
-                  padding: unset;
-                  width: 80%;
-                  margin-top: 24px;
-                  .undernumslide {
-                        .descr {
-                              margin-left: 12px;
-                              .helptitle {
-                                    font-family: TT Norms-Bold;
-                                    font-size: 16px;
-                              }
-                              .helpdescr {
-                                    @include font(TT Norms, normal, normal, 14px, 124%, 0.005em);
-                              }
-                        }
-                  }
-            }
-      }
-      .selection {
-            flex-wrap: wrap;
-            margin: 60px 12px 0;
-            .title {
-                  display: flex;
-                  align-items: center;
-                  margin-top: unset;
-                  text-align: center;
-                  font-size: 28px;
-                  line-height: 124%;
-            }
-            .selection-list {
-                  display: none;
-            }
+      .patients-slide {
+            display: none;
             .swiper-container {
-                  flex: 0 0 100%;
-                  min-height: 243px;
-                  background: #f5f8fa;
-                  border-radius: 8px;
-                  margin-top: 28px;
-                  .row {
-                        display: flex;
-                        align-items: flex-start;
-                        margin: 24px 0 0 24px;
-                        img {
-                              width: 56px;
-                              height: 56px;
+                  width: 100%;
+                  height: 420px;
+                  margin-top: 32px;
+                  .nko-worker {
+                        @include nko-worker(0);
+                        iframe {
+                              width: 95%;
+                              border-radius: unset;
+                              border-top-left-radius: 12px;
+                              border-top-right-radius: 12px;
+                              box-shadow: 0px 3px 10px rgba(37, 76, 147, 0.14);
                         }
-                        .doctorinfo {
-                              display: flex;
-                              flex-direction: column;
-                              max-width: 90%;
-                              margin-left: 24px;
-                              .position,
-                              .opit {
-                                    @include font(TT Norms-Bold, normal, normal, 14px, 136%, 0.01em);
-                                    color: #304b93;
-                              }
-                              .fio {
-                                    display: block;
-                                    margin-top: 10px;
-                                    @include font(TT Norms-Bold, normal, 500, 18px, 124%, 0.005em);
-                                    color: #0b1635;
-                              }
-                              .opit {
-                                    margin-top: 8px;
-                              }
-                              .education {
-                                    display: none;
-                              }
-                        }
-                  }
-                  .educationmob {
-                        display: block;
-                        max-width: 80%;
-                        @include font(TT Norms, normal, 500, 15px, 134%, null);
-                        margin: 16px 0 0 24px;
-                        span {
-                              color: #0b1635;
+                        .nko-worker-description {
+                              display: block;
+                              width: 95%;
                         }
                   }
                   .swiper-pagination {
-                        display: block;
-                        background: white;
-                        padding-top: 21px;
-                        bottom: 0;
-                  }
-                  .swiper-button-prev,
-                  .swiper-button-next {
-                        display: none;
+                        top: 410px;
                   }
             }
       }
-      .inourteam {
-            margin: 50px 30px 0;
-            .title {
-                  font-size: 24px;
-                  line-height: 124%;
-                  text-align: center;
-                  margin: unset;
-            }
-            .undertitle {
-                  display: block;
-                  width: unset;
-                  margin-top: 14px;
-                  @include font(TT Norms, normal, normal, 14px, 134%, 0.01em);
-                  color: #202642;
-                  text-align: center;
-            }
-            .container {
-                  display: flex;
-                  flex-wrap: wrap;
-                  justify-content: center;
-                  margin-top: 4px;
-                  .item {
-                        display: inline-block;
-                        flex: unset;
-                        margin-top: 14px;
-                        span {
-                              font-size: 16px;
-                        }
-                        img {
-                              display: none;
-                        }
-                  }
-                  .item:first-child {
-                        span {
-                              margin-left: unset;
-                        }
-                  }
-            }
+}
+.how-become {
+      .title {
+            @include title(98);
       }
-      .tagalog {
-            margin: 0 30px;
-            span {
-                  display: block;
-                  text-align: center;
-            }
+      .undertitle {
+            display: block;
+            @include font(TT Norms, normal, normal, 18px, 148%, 0.01em);
+            color: #202642;
+            margin: 18px 328px 0;
+            text-align: center;
       }
-      .joinus {
-            button {
-                  display: block;
-                  @include btn();
-                  margin: 48px auto 0;
-                  .tri {
-                        @include triangle;
-                  }
-            }
-      }
-      .who-we-need {
-            background: unset;
-            margin-top: 46px;
-            width: 100%;
-            .title {
-                  padding-top: 50px;
-                  margin: 0 40px 0;
-                  font-size: 34px;
-                  line-height: 138%;
-            }
-            .undertitle {
-                  display: block;
-                  text-align: center;
-                  @include font(TT Norms, normal, normal, 16px, 132%, 0.005em);
-                  margin: 18px 45px 0;
-                  color: #202642;
-                  span {
-                        font-weight: 800;
-                        font-size: 20px;
-                  }
-            }
-            .we-need-list {
-                  display: flex;
-                  flex-wrap: wrap;
-                  margin: 0 0 0 20px;
-                  justify-content: unset;
+      .container {
+            display: flex;
+            margin: 24px 121px 0 183px;
+            .become-list {
+                  flex: 0 0 50%;
                   .undernumslide {
-                        flex: 0 0 100%;
                         display: flex;
                         align-items: center;
-                        margin-top: 32px;
+                        margin-top: 24px;
                         .redstar {
                               @include redstar();
                               margin-left: unset;
                         }
 
                         .helptitle {
-                              margin-left: 16px;
-                              @include font(TT Norms, normal, 500, 22px, 124%, 0.005em);
+                              margin-left: 12px;
+                              @include font(TT Norms, normal, 500, 18px, 136%, 0.005em);
                               color: #202642;
                         }
                   }
             }
-            .lastext {
-                  display: none;
-            }
-            .joinus {
+            .form {
+                  margin-top: 24px;
+                  background: #f5f8fa;
+                  border-radius: 8px;
+                  flex: 0 0 50%;
+                  .form-title {
+                        display: block;
+                        margin: 24px auto 0;
+                        @include font(TT Norms, normal, 500, 18px, 136%, 0.005em);
+                        color: #202642;
+                        text-align: center;
+                  }
+                  .form-container {
+                        margin: 0 24px 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        input {
+                              display: block;
+                              flex: 0 0 calc(50% - 16px);
+                              margin: 20px 0 0 32px;
+                              padding: 14px 0 14px 18px;
+                              background: #ffffff;
+                              border: 1px solid rgba(0, 64, 148, 0.3);
+                              border-radius: 4px;
+                        }
+                        ::placeholder {
+                              color: #004094;
+                              @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                        }
+                        input:nth-child(odd) {
+                              margin-left: unset;
+                        }
+                  }
+                  .agreement {
+                        display: none;
+                        justify-content: start;
+                        margin-top: 17px;
+                        padding-bottom: 38px;
+                        .agreement-text {
+                              @include font(Inter, normal, 500, 12px, 136%, null);
+                              color: #0b1635;
+                              margin-left: 7px;
+                              span {
+                                    color: #004094;
+                              }
+                        }
+                  }
                   button {
-                        margin: 40px auto 0;
+                        display: block;
+                        @include btn();
+                        background: #304b93;
+                        border-radius: 6px;
+                        margin: 24px 0 32px 24px;
+                        padding: 12px 40px;
+                        .tri {
+                              @include triangle;
+                        }
                   }
             }
       }
-      .results {
-            .title:first-child {
-                  display: none;
-            }
-            .title:nth-child(2) {
-                  display: block;
-            }
-            .title {
-                  margin-top: 94px;
-            }
-            .undertitle {
-                  display: none;
-            }
-            .undertitlemob {
-                  @include undertitle();
-                  font-size: 18px;
-                  line-height: 138%;
-                  margin-top: 20px;
-            }
-            .years {
-                  display: none;
-            }
-            .numbs {
-                  margin-top: 32px;
-                  display: block;
-                  height: 390px;
-                  .swiper-container {
-                        width: 250px;
-                        margin: 0 auto 0;
-                        height: auto;
-                        img {
-                              height: 368px;
+}
+.all-answers {
+      display: block;
+      background: #f5f8fa;
+      overflow: hidden;
+      margin-top: 50px;
+      .title {
+            @include title(48);
+      }
+      .answers {
+            margin: 32px 0 48px;
+            .answers-list {
+                  margin: 0 297px 0;
+                  background: #ffffff;
+                  overflow: hidden;
+                  .qa {
+                        display: flex;
+                        align-items: center;
+
+                        justify-content: space-between;
+                        .question {
+                              @include font(TT Norms, normal, 500, 18px, 124%, null);
+                              color: #367bf5;
+                              margin-left: 20px;
+                              padding: 18px 0;
                         }
-                        .swiper-pagination {
+                        .plus {
+                              display: flex;
+                              border: 1px solid #304b93;
+                              border-radius: 50%;
+                              padding: 9px;
+                              color: #304b93;
+                              justify-content: center;
+                              align-items: center;
+                              margin-right: 20px;
+                              cursor: pointer;
+                        }
+                  }
+                  .answer-block {
+                        margin: 0 8px 8px;
+                        background: #f5f8fa;
+                        overflow: hidden;
+                        span {
                               display: block;
-                              background: white;
-                              bottom: 0;
+                              @include font(Inter, normal, normal, 14px, 154%, 0.005em);
+                              color: #0b1635;
+                              margin: 16px 80px 12px 10px;
                         }
                   }
             }
-            .after-numbersmob {
-                  display: block;
-                  padding: unset;
-                  margin: 35px 64px 0 16px;
-                  li {
-                        span {
-                              .life-hearts {
-                                    color: #f23b53;
+      }
+}
+@media screen and(min-width:1280px) {
+      body {
+            width: 1280px;
+            margin: 0 auto 0;
+            .nko {
+                  margin: 48px auto 0;
+            }
+            .how-become {
+                  .title {
+                        @include title(98);
+                  }
+                  .undertitle {
+                        display: block;
+                        @include font(TT Norms, normal, normal, 18px, 148%, 0.01em);
+                        color: #202642;
+                        margin: 18px 328px 0;
+                        text-align: center;
+                  }
+                  .container {
+                        display: flex;
+                        margin: 24px 121px 0 183px;
+                        .become-list {
+                              flex: 0 0 50%;
+                              .undernumslide {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 24px;
+                                    .redstar {
+                                          @include redstar();
+                                          margin-left: unset;
+                                    }
+
+                                    .helptitle {
+                                          margin-left: 12px;
+                                          @include font(TT Norms, normal, 500, 18px, 136%, 0.005em);
+                                          color: #202642;
+                                    }
+                              }
+                        }
+                        .form {
+                              margin-top: 24px;
+                              background: #f5f8fa;
+                              border-radius: 8px;
+                              flex: 0 0 50%;
+                              .form-title {
+                                    display: block;
+                                    margin: 24px auto 0;
+                                    @include font(TT Norms, normal, 500, 18px, 136%, 0.005em);
+                                    color: #202642;
+                                    text-align: center;
+                              }
+                              .form-container {
+                                    margin: 0 24px 0;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    input {
+                                          display: block;
+                                          flex: 0 0 calc(50%-16px);
+                                          margin: 10px 0 0 8px;
+                                          padding: 7px 0 7px 9px;
+                                          background: #ffffff;
+                                          border: 1px solid rgba(0, 64, 148, 0.3);
+                                          border-radius: 4px;
+                                    }
+                                    ::placeholder {
+                                          color: #004094;
+                                          @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                                    }
+                                    input:nth-child(odd) {
+                                          margin-left: unset;
+                                    }
+                              }
+                              .agreement {
+                                    display: none;
+                                    justify-content: start;
+                                    margin-top: 17px;
+                                    padding-bottom: 38px;
+                                    .agreement-text {
+                                          @include font(Inter, normal, 500, 12px, 136%, null);
+                                          color: #0b1635;
+                                          margin-left: 7px;
+                                          span {
+                                                color: #004094;
+                                          }
+                                    }
+                              }
+                              button {
+                                    display: block;
+                                    @include btn();
+                                    background: #304b93;
+                                    border-radius: 6px;
+                                    margin: 24px 0 32px 24px;
+                                    padding: 12px 40px;
+                                    .tri {
+                                          @include triangle;
+                                    }
                               }
                         }
                   }
             }
       }
-      .partners-title {
-            font-size: 34px;
-            line-height: 134%;
-      }
-      .partnersWrappeGr {
-            margin: 24px 12px 0;
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 4px;
-            justify-content: center;
-            .partnersItemGr {
-                  background: #f5f8fa;
-                  border-radius: unset;
-                  margin: 4px;
-                  padding: 55px 24px;
-                  font-size: unset;
-                  span {
-                        text-align: center;
-                  }
-            }
-      }
-      .nko-titles {
-            .nko-title:first-child {
-                  display: none;
-            }
-            .nko-title:nth-child(2) {
-                  display: block;
-                  font-size: 34px;
-                  line-height: 124%;
-                  margin: 72px 7px 0;
-            }
-      }
-
-      .nko {
-            display: none;
-      }
-
-      .nko-slides {
-            display: block;
+}
+@media screen and(min-width:1600px) {
+      body {
+            width: 1440px;
+            margin: 0 auto 0;
       }
 }
