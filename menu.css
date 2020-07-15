@@ -125,7 +125,7 @@ a {
       right: 22px;
 }
 
-.drawerlinks > div {
+.drawerlinks>div {
       display: table;
       font-family: PT Mono;
       font-style: normal;
@@ -138,7 +138,7 @@ a {
       margin-top: 18px;
 }
 
-.drawerlinks > div span {
+.drawerlinks>div span {
       display: table;
       margin: 11px;
 }
@@ -240,6 +240,7 @@ a {
       text-decoration: none;
       margin: 10px;
 }
+
 .anyQstnsBlock {
       background: #367bf5;
       overflow: hidden;
@@ -253,6 +254,7 @@ a {
       /* or 60px */
       color: #f5f7fa;
 }
+
 .anyqstnformblock {
       display: table;
       margin: 27px auto 41px;
@@ -358,6 +360,7 @@ a {
       float: left;
       width: 10%;
 }
+
 .socialIcons {
       margin-top: 18px;
       padding-bottom: 42px;
@@ -415,17 +418,20 @@ a {
       font-size: 18px;
       line-height: 118%;
 }
+
 footer .tellAboutUS {
       text-align: center;
       margin-top: 40px;
       font-size: 24px;
       color: #304b93;
 }
+
 footer .socialIcons {
       display: flex;
       justify-content: center;
       padding: 0;
 }
+
 .botNav {
       display: flex;
       flex-direction: row;
@@ -511,6 +517,7 @@ footer .socialIcons {
       list-style: none;
       display: inline;
 }
+
 .helpToWork {
       overflow: hidden;
       background-image: url("./img/Rect.jpg");
@@ -518,6 +525,7 @@ footer .socialIcons {
       background-repeat: no-repeat;
       margin-top: 43px;
 }
+
 .rowToWork {
       display: flex;
       align-items: center;
@@ -537,6 +545,7 @@ footer .socialIcons {
       /* white */
       color: #ffffff;
 }
+
 .helpTohelp {
       margin-top: 20px;
       display: block;
@@ -549,6 +558,7 @@ footer .socialIcons {
       /* white */
       color: #ffffff;
 }
+
 .helpboard {
       margin: 47px 120px 47px 0;
       background: white;
@@ -723,6 +733,7 @@ footer .socialIcons {
 }
 
 /* */
+
 @media screen and (max-width: 1440px) {
       .navSection ul {
             padding: 6px 0 18px 0;
@@ -732,6 +743,7 @@ footer .socialIcons {
             margin-bottom: 3px;
       }
 }
+
 @media screen and (max-width: 1280px) {
       .navSection ul {
             margin-left: unset;
@@ -740,6 +752,7 @@ footer .socialIcons {
             margin-left: unset;
       }
 }
+
 @media only screen and (max-width: 768px) {
       .lp-header {
             width: 100%;
@@ -947,5 +960,88 @@ footer .socialIcons {
       .botNav .menuButtons a {
             text-align: center;
             margin: 0 auto;
+      }
+      .helpToWork {
+            margin-top: 48px;
+            position: relative;
+            background-image: url("./img/backgrmob.jpg");
+            width: 100%;
+      }
+      .rightSide {
+            width: 100%;
+      }
+      .rowToWork {
+            flex-wrap: wrap;
+      }
+      .descrToWork {
+            overflow: hidden;
+            font: 500 16px TT Norms;
+            margin: 24px 11px 0px 11px;
+            line-height: 138%;
+      }
+      .helpTohelp {
+            font-size: 34px;
+            margin-top: 16px;
+      }
+      .howWeHelpTitle {
+            display: block;
+      }
+      .helpboard {
+            margin: 42px 8px;
+            display: flex;
+            flex-direction: column;
+            /* margin: 0; */
+            /* margin-bottom: 200px; */
+            /* margin-left: 5%; */
+            padding: 0;
+      }
+      .periodblock {
+            margin: 0 34px 0;
+      }
+      .hlpbrdTitle {
+            padding-top: 16px;
+      }
+      .item {
+            flex-basis: 32.9%;
+      }
+      .sumblock {
+            margin: 26px 40px 18px;
+      }
+      .continuepay {
+            display: flex;
+            margin: 0 15px;
+            padding-bottom: 22px;
+            justify-content: center;
+      }
+      .socialIconsBlock {
+            position: absolute;
+            margin: 0 48px;
+            left: 0;
+            right: 0;
+            bottom: 41px;
+      }
+      .socialIcons {
+            justify-content: center;
+            padding: 0;
+      }
+      .tellAboutUS {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 108px;
+            text-align: center;
+      }
+      .partnersWrapper {
+            margin-top: 24px;
+      }
+      .underHelpBoard {
+            display: block;
+            margin: 30px 35px 150px;
+            font-family: TT Norms-Bold;
+            font-size: 18px;
+            line-height: 118%;
+            text-align: center;
+            color: #ffffff;
       }
 }
