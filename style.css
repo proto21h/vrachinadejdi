@@ -2808,6 +2808,7 @@ textarea {
         font-size: 16px;
     }
     .spendsContainer {
+        width: 100%;
         flex-wrap: nowrap;
         justify-content: unset;
         margin: 0;
@@ -2818,6 +2819,7 @@ textarea {
     }
     .spendsText {
         margin-left: 10px;
+        width: unset;
     }
     .spendsDescr {
         display: inline-block;

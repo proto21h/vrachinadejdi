@@ -533,6 +533,7 @@ main {
       -ms-flex: 0 0 33%;
           flex: 0 0 33%;
   margin-top: 20px;
+  border: unset;
 }
 
 .inourteam .container .item span {
@@ -1457,6 +1458,219 @@ main {
   letter-spacing: 0.005em;
   color: #0b1635;
   margin: 16px 80px 12px 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    width: 100%;
+    margin: 0 auto 0;
+  }
+  body .nko {
+    margin: 48px auto 0;
+  }
+  body .how-become .title {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    color: #367bf5;
+    margin-top: 98;
+  }
+  body .how-become .undertitle {
+    display: block;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 148%;
+    letter-spacing: 0.01em;
+    color: #202642;
+    margin: 18px 328px 0;
+    text-align: center;
+  }
+  body .how-become .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 24px 121px 0 183px;
+  }
+  body .how-become .container .become-list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  body .how-become .container .become-list .undernumslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 24px;
+  }
+  body .how-become .container .become-list .undernumslide .redstar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16px;
+            flex: 0 0 16px;
+    height: 16px;
+    background-image: url(./img/redstar.png);
+    background-size: auto;
+    background-attachment: cover;
+    margin: 4px 0 0 16px;
+    margin-left: unset;
+  }
+  body .how-become .container .become-list .undernumslide .redstar .redpoint {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: auto;
+  }
+  body .how-become .container .become-list .undernumslide .helptitle {
+    margin-left: 12px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    letter-spacing: 0.005em;
+    color: #202642;
+  }
+  body .how-become .container .form {
+    margin-top: 24px;
+    background: #f5f8fa;
+    border-radius: 8px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  body .how-become .container .form .form-title {
+    display: block;
+    margin: 24px auto 0;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    letter-spacing: 0.005em;
+    color: #202642;
+    text-align: center;
+  }
+  body .how-become .container .form .form-container {
+    margin: 0 24px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .how-become .container .form .form-container input {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50%-16px);
+            flex: 0 0 calc(50%-16px);
+    margin: 10px 0 0 8px;
+    padding: 7px 0 7px 9px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 64, 148, 0.3);
+    border-radius: 4px;
+  }
+  body .how-become .container .form .form-container ::-webkit-input-placeholder {
+    color: #004094;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+  }
+  body .how-become .container .form .form-container :-ms-input-placeholder {
+    color: #004094;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+  }
+  body .how-become .container .form .form-container ::-ms-input-placeholder {
+    color: #004094;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+  }
+  body .how-become .container .form .form-container ::placeholder {
+    color: #004094;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+  }
+  body .how-become .container .form .form-container input:nth-child(odd) {
+    margin-left: unset;
+  }
+  body .how-become .container .form .agreement {
+    display: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 17px;
+    padding-bottom: 38px;
+  }
+  body .how-become .container .form .agreement .agreement-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 136%;
+    color: #0b1635;
+    margin-left: 7px;
+  }
+  body .how-become .container .form .agreement .agreement-text span {
+    color: #004094;
+  }
+  body .how-become .container .form button {
+    display: block;
+    position: relative;
+    padding: 16px 20px;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134%;
+    margin-top: 32px;
+    background: #367bf5;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+    background: #304b93;
+    border-radius: 6px;
+    margin: 24px 0 32px 24px;
+    padding: 12px 40px;
+  }
+  body .how-become .container .form button .tri {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 4px solid #f9b53b;
+    border-bottom: 4px solid #f9b53b;
+    border-left: 4px solid transparent;
+    border-radius: 0px 0px 4px 0px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
