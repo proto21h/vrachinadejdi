@@ -26,7 +26,7 @@
             <div class="navdrawheader">
                   <a href="./index.html"> <span>Врачи надежды</span></a>
 
-                  <img src="./img/close.png" alt="close" href="/index">
+                  <img src="./img/close.png" alt="close" />
             </div>
             <div class="drawerlinks">
                   <a href="#">Главная</a>
@@ -77,7 +77,7 @@
                                                 onclick="$('html, body').animate({scrollTop: $(`#pokazateli`).offset().top-100}, 500);">Показатели</a>
                                     </li>
                                     <li><a class="menu__links-item" href="#"
-                                                onclick="$('html, body').animate({scrollTop: $(`.whyHelpBlock .title`).offset().top-100}, 500);">Благотворители</a>
+                                                onclick="$('html, body').animate({scrollTop: $(`#blago-li`).offset().top-100}, 500);">Благотворители</a>
                                     </li>
                                     <li><a class="menu__links-item" href="#"
                                                 onclick="$('html, body').animate({scrollTop: $(`.anyqstnTitle`).offset().top}, 500);">Контакты</a>
@@ -369,7 +369,7 @@
                         <span> Жизнь как чудо Москва </span>
                   </div>
             </div>
-            <div class="nko-titles">
+            <div id="blago-li" class="nko-titles">
                   <span class="nko-title">Руководители НКО о сотрудничестве с нами</span>
                   <span class="nko-title">Кто помогает деятельности проектa ?</span>
             </div>
@@ -490,22 +490,19 @@
                   <ul>
                         <div class="menuLinks">
                               <li><a class="menu__links-item" href="#"
-                                          onclick="$('html, body').animate({scrollTop: $(`.block-aboutus`).offset().top}, 500);">О
-                                          Нас</a></li>
+                                          onclick="$('html, body').animate({scrollTop: $(`.underNavBlock`).offset().top-100}, 500);">Кто
+                                          мы</a></li>
                               <li><a class="menu__links-item" href="#"
-                                          onclick="$('html, body').animate({scrollTop: $(`.block-how-works`).offset().top}, 500);">Как
+                                          onclick="$('html, body').animate({scrollTop: $(`#howhelp`).offset().top-100}, 500);">Как
                                           мы помогаем</a></li>
                               <li><a class="menu__links-item" href="#"
-                                          onclick="$('html, body').animate({scrollTop: $(`.numbs`).offset().top}, 500);">Показатели</a>
+                                          onclick="$('html, body').animate({scrollTop: $(`#pokazateli`).offset().top-100}, 500);">Показатели</a>
                               </li>
                               <li><a class="menu__links-item" href="#"
-                                          onclick="$('html, body').animate({scrollTop: $(`.patientsHistory`).offset().top}, 500);">Истории</a>
+                                          onclick="$('html, body').animate({scrollTop: $(`#blago-li`).offset().top-100}, 500);">Благотворители</a>
                               </li>
                               <li><a class="menu__links-item" href="#"
-                                          onclick="$('html, body').animate({scrollTop: $(`.whyHelpBlock`).offset().top}, 500);">Благотворители</a>
-                              </li>
-                              <li><a class="menu__links-item" href="#"
-                                          onclick="$('html, body').animate({scrollTop: $(`.anyQstnsBlock`).offset().top}, 500);">Контакты</a>
+                                          onclick="$('html, body').animate({scrollTop: $(`.anyqstnTitle`).offset().top}, 500);">Контакты</a>
                               </li>
                         </div>
 
