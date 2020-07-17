@@ -3205,3 +3205,30 @@ label[for="tab_1"] {
     padding: 0 10.9%;
     padding-bottom: 30px;
 }
+
+.logoNadejda,
+.logoHome,
+.logoIhsan,
+.logoKdl,
+.logoLekki,
+.logoLife,
+.logoSirat,
+.logoZakyat {
+    background-size: cover;
+    background-position-x: no-repeat;
+    background-position: center;
+    background-color: #fff;
+}
+
+.logoNadejda {background-image: url(/img/fundslogo/nadejda_logo.jpeg);}
+.logoHome {background-image: url(/img/fundslogo/home_logo.png);}
+.logoIhsan {background-image: url(/img/fundslogo/ihsan_logo.jpg);}
+.logoKdl {background-image: url(/img/fundslogo/kdl_logo.jpg);}
+.logoLekki {background-image: url(/img/fundslogo/leki_logo.jpg);}
+.logoLife {background-image: url(/img/fundslogo/life_logo.jpg);}
+.logoSirat {background-image: url(/img/fundslogo/sirat_logo.jpg);}
+.logoZakyat {background-image: url(/img/fundslogo/zakyat_logo.png);}
+
+.partnersItemGr span {
+    opacity: 0;
+}

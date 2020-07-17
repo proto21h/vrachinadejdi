@@ -11,7 +11,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/select2.min.js"></script>
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Врачи надежды</title>
 </head>
 
 <body>
@@ -241,7 +242,7 @@
 
             </div>
 
-            <div class="patientsHistory">
+            <!-- <div class="patientsHistory">
                 <span class="howWeHelpTitle">Истории наших подопечных</span>
                 <span class="underHowWeTitle">Подзаголовок</span>
                 <div class="patientsHistoryBlocksContainer">
@@ -406,8 +407,8 @@
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
-                </div>
-            </div>
+                <!-- </div>
+            </div> -->
 
             <div class="whyHelpBlock">
                 <span class="title">Для чего нужна финансовая <br /> поддержка ?</span>
@@ -564,7 +565,10 @@
 
 
                     </div>
+
+
                     <div class="rightSide">
+                    <form action="https://money.yandex.ru/eshop.xml" method="post">
                         <div class="helpboard">
                             <span class="hlpbrdTitle">Сделать пожертвование</span>
                             <div class="boardRow">
@@ -638,45 +642,53 @@
 
                                         </div>
                                     </div>
+                                    
+                                        <div class=item>
+                                            <input type="text" id="anothersumm" placeholder="Другая сумма"
+                                            
+                                                name="anothersumm">
 
-                                    <div class=item>
-                                        <input type="text" id="anothersumm" placeholder="Другая сумма"
-                                            name="anothersumm">
-
-                                    </div>
+                                        </div>
+                                    
                                 </div>
                             </div>
                             <div class="continuepay"> <button>ПРОДОЛЖИТЬ</button></div>
-                        </div>
+                        </div>                   
                         <span class="underHelpBoard">Информационаая поддержка тоже очень важна!</span>
+                        <input type="hidden" name="shopId" value="729211">
+                        <input type="hidden" name="scid" value="145474">
+                        <input type="hidden" name="sum" id="sum" value="0">
+                        <input type="hidden" name="customerNumber" value="Благотворительный платёж">
+                        <input type="hidden" name="orderNumber" value="<?php echo str_replace('.','',microtime(true)); ?>">
+                    </form>
                     </div>
                 </div>
             </div>
             <div class="partnersBlockGr">
                 <span class="howWeHelpTitle">С нами сотрудничают</span>
                 <div class="partnersWrappeGr">
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoNadejda">
                         <span> Надежда махачкала </span>
                     </div>
-                    <div class="partnersItemGr">
-                        <span> Фонд </span>
+                    <div class="partnersItemGr logoHome">
+                        <span> Фонд Дом доброты</span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoSirat">
                         <span> Сират махачкала </span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoLekki">
                         <span> Лекки ЮЖДАГ </span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoZakyat">
                         <span> Закят - Москва</span>
                     </div>
-                    <div class="partnersItemGr">
-                        <span> Благое дело - УФА </span>
+                    <div class="partnersItemGr logoIhsan">
+                        <span> Фонд Ихсан </span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoKdl">
                         <span> КДЛ - Ингушетия </span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoLife">
                         <span> Жизнь как чудо Москва </span>
                     </div>
                 </div>
@@ -693,12 +705,12 @@
                         <input type="text" name="i_email" placeholder="Ваш Email">
                         <input type="submit" value="Позвоните мне">
                   </form> -->
-                    <form action="/i_doctor" class="form-inline" method="post">
+                    <form id="mail-form" class="form-inline" method="post">
                         <div class="formfields">
-                            <input type="text" id="name" placeholder="Имя" name="name">
-                            <input type="text" id="phone" placeholder="Телефон" name="phone">
+                            <input type="text" id="name" placeholder="Имя" name="name" required>
+                            <input type="text" id="phone" placeholder="Телефон" name="phone" required>
                             <input type="email" id="eml" placeholder="Email" name="eml">
-                            <button type="Submit" class="wantHelpButton">
+                            <button type="button" id="sendmail" class="wantHelpButton" disabled>
                                 <span class="wantHelpButtonText">Получить консультацию</span>
                                 <span class="wantHelpButtonText2">Отправить</span>
                                 <div class="triangle"></div>
@@ -708,7 +720,6 @@
                             <input type="checkbox" id="agree">
                             <span>Я согласен с условиями обработки </span> <span>персональных данных</span>
                         </div>
-
                     </form>
                 </div>
             </div>
@@ -793,6 +804,33 @@
         });
     </script>
     <!--  -->
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#mail-form #agree').on('change', function() { //устанавливаем событие отправки для формы с id=form  
+                if ($('#mail-form #agree').is(':checked')) {
+                    $("#mail-form #sendmail").prop('disabled',false) 
+                } else { 
+                    $("#mail-form #sendmail").prop('disabled',true) 
+                }
+            })
+
+            $("#mail-form #sendmail").on('click', function() { //устанавливаем событие отправки для формы с id=form
+                //e.preventDefault()
+                var form_data = $(this).serialize(); //собераем все данные из формы
+                $.ajax({
+                    type: 'POST', //Метод отправки
+                    url: '/mail/mailsender.php', //путь до php фаила отправителя
+                    data: form_data,
+                            success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
+                            //alert(JSON.stringify(data));
+                            alert('Ваше сообщение отпрвлено!'); // пoкaжeм eё тeкст
+                        }
+                });
+            });
+        });    
+    </script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script> -->
 </body>
 
 </html>
