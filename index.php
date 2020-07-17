@@ -68,9 +68,9 @@
                         <li><a class="menu__links-item" href="#"
                                 onclick="$('html, body').animate({scrollTop: $(`.workInNum`).offset().top-100}, 500);">Показатели</a>
                         </li>
-                        <li><a class="menu__links-item" href="#"
+                        <!-- <li><a class="menu__links-item" href="#"
                                 onclick="$('html, body').animate({scrollTop: $(`.patientsHistory`).offset().top-100}, 500);">Истории</a>
-                        </li>
+                        </li> -->
                         <li><a class="menu__links-item" href="#"
                                 onclick="$('html, body').animate({scrollTop: $(`.whyHelpBlock .title`).offset().top-100}, 500);">Благотворители</a>
                         </li>
@@ -111,7 +111,7 @@
                         </span>
                     </div>
                     <div style="position:relative; display: table;">
-                        <button class="wantHelpButton">
+                        <button class="wantHelpButton" onclick="$('html, body').animate({scrollTop: $(`.helpToWork`).offset().top-100}, 500);">
                             <span class="wantHelpButtonText">Я хочу помочь!</span>
                             <div class="triangle"></div>
                         </button>
@@ -427,7 +427,7 @@
                             </span>
                         </div>
 
-                        <button class="wantHelpButton">
+                        <button class="wantHelpButton" onclick="$('html, body').animate({scrollTop: $(`.helpToWork`).offset().top-100}, 500);">
                             <span class="wantHelpButtonText">Помочь «Врачам надежды»</span>
                             <div class="triangle"></div>
                         </button>
@@ -536,7 +536,7 @@
                     </div>
                 </div>
 
-                <button class="wantHelpButton">
+                <button class="wantHelpButton" onclick="$('html, body').animate({scrollTop: $(`.helpToWork`).offset().top-100}, 500);">
                     <span class="wantHelpButtonText">Помочь «Врачам надежды»»</span>
                     <div class="triangle"></div>
                 </button>
