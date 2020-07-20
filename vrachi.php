@@ -24,7 +24,7 @@
       <div class="navdrawr">
 
             <div class="navdrawheader">
-                  <a href="./index.html"> <span>Врачи надежды</span></a>
+                  <a href="/"> <span>Врачи надежды</span></a>
 
                   <img src="./img/close.png" alt="close" />
             </div>
@@ -60,7 +60,7 @@
                         </div>
 
                         <div class="logoSection">
-                              <a href="/index.html"> <img src="img/logo.png" /></a>
+                              <a href="/"> <img src="img/logo.png" /></a>
 
                               <span>Врачи <br />
                                     надежды</span>
@@ -344,31 +344,31 @@
             </div>
             <span id="partners" class="partners-title">С нами сотрудничают</span>
             <div class="partnersWrappeGr">
-                  <div class="partnersItemGr">
+                    <div class="partnersItemGr logoNadejda">
                         <span> Надежда махачкала </span>
-                  </div>
-                  <div class="partnersItemGr">
-                        <span> Фонд </span>
-                  </div>
-                  <div class="partnersItemGr">
+                    </div>
+                    <div class="partnersItemGr logoHome">
+                        <span> Фонд Дом доброты</span>
+                    </div>
+                    <div class="partnersItemGr logoSirat">
                         <span> Сират махачкала </span>
-                  </div>
-                  <div class="partnersItemGr">
+                    </div>
+                    <div class="partnersItemGr logoLekki">
                         <span> Лекки ЮЖДАГ </span>
-                  </div>
-                  <div class="partnersItemGr">
+                    </div>
+                    <div class="partnersItemGr logoZakyat">
                         <span> Закят - Москва</span>
-                  </div>
-                  <div class="partnersItemGr">
-                        <span> Благое дело - УФА </span>
-                  </div>
-                  <div class="partnersItemGr">
+                    </div>
+                    <div class="partnersItemGr logoIhsan">
+                        <span> Фонд Ихсан </span>
+                    </div>
+                    <div class="partnersItemGr logoKdl">
                         <span> КДЛ - Ингушетия </span>
-                  </div>
-                  <div class="partnersItemGr">
+                    </div>
+                    <div class="partnersItemGr logoLife">
                         <span> Жизнь как чудо Москва </span>
-                  </div>
-            </div>
+                    </div>
+                </div>
             <div id="blago-li" class="nko-titles">
                   <span class="nko-title">Руководители НКО о сотрудничестве с нами</span>
                   <span class="nko-title">Кто помогает деятельности проектa ?</span>
@@ -442,7 +442,7 @@
                           <input type="text" name="i_email" placeholder="Ваш Email">
                           <input type="submit" value="Позвоните мне">
                     </form> -->
-                        <form action="/i_doctor" class="form-inline" method="post">
+                        <form action="/vrachi.php" class="form-inline" method="post">
                               <div class="formfields">
                                     <input type="text" id="name" placeholder="Имя" name="name">
                                     <input type="text" id="phone" placeholder="Телефон" name="phone">

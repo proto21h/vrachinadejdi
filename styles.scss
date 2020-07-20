@@ -455,6 +455,8 @@ main {
       @include title(113px);
       margin: 113px 20px 0;
 }
+
+
 .partnersWrappeGr {
       margin: 48px 132px;
       display: grid;
@@ -476,6 +478,7 @@ main {
             color: #304b93;
       }
 }
+
 .nko-titles {
       .nko-title {
             @include title(90);

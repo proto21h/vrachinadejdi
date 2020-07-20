@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -80,12 +81,12 @@
                     </div>
                     <div>
                         <li class="menuButtons">
-                            <a href="#"><span>НКО</span></a>
+                            <a href="nko.php"><span>НКО</span></a>
                         </li>
                     </div>
                     <div>
                         <li class="menuButtons">
-                            <a href="./vrachi.html"><span>Врачи</span></a>
+                            <a href="vrachi.php"><span>Врачи</span></a>
                         </li>
                     </div>
                 </ul>

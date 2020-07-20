@@ -1,0 +1,350 @@
+@import "./fonts.sass";
+@import "./common.scss";
+main {
+      margin-top: 156px;
+      .offer-help {
+            display: flex;
+            section {
+                  margin-left: 120px;
+                  margin-right: 109px;
+                  h1 {
+                        @include font(TT Norms-Bold, normal, normal, 52px, 124%, null);
+                        @include fontcolor;
+                  }
+                  span {
+                        display: block;
+                        width: 90%;
+                        @include font(TT Norms, normal, 500, 20px, 134%, null);
+                        color: #304b93;
+                        margin-top: 22px;
+                        margin-right: 22px;
+                        .free {
+                              display: inline;
+                              color: #f23b53;
+                              margin-right: 0;
+                        }
+                  }
+                  span:first-child {
+                        margin-top: 0;
+                  }
+                  button {
+                        @include buttonInNKO();
+                  }
+            }
+            img {
+                  margin-right: 78px;
+            }
+      }
+      .who-we-are {
+            display: block;
+            width: 100%;
+            h1 {
+                  @include font(TT Norms-Bold, normal, normal, 52px, 124%, null);
+                  @include fontcolor;
+                  text-align: center;
+                  margin-top: 122px;
+            }
+            .container {
+                  display: flex;
+                  padding-top: 6px;
+                  margin-left: 120px;
+                  margin-right: 205px;
+                  section {
+                        margin-right: 103px;
+                        span {
+                              .doctors {
+                                    display: inline;
+                              }
+                              display: block;
+                              margin-top: 48px;
+                              @include font(TT Norms, normal, normal, 24px, 158%, null);
+                              color: #202642;
+                        }
+                        span:first-child {
+                              margin-top: 0;
+                        }
+                        button {
+                              @include buttonInNKO();
+                              margin-top: 48px;
+                        }
+                  }
+                  .right {
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                              text-align: center;
+                              @include font(TT Norms-Bold, normal, normal, 20px, 114%, null);
+                              @include fontcolor;
+                        }
+                        .row {
+                              display: flex;
+                              flex: 1;
+                              .card {
+                                    flex: 1;
+                                    margin-left: 67px;
+                                    margin-top: 32px;
+                                    .img {
+                                          border-radius: 12px;
+                                    }
+                                    span {
+                                          display: table;
+                                    }
+                                    .name {
+                                          @include font(Inter, normal, 500, 16px, 132%, 0.005em);
+                                          color: #0b1635;
+                                          margin-top: 12px;
+                                    }
+                                    .position {
+                                          @include font(Inter, normal, normal, 15px, 138%, 0.005em);
+                                          color: #f23b53;
+                                          margin-top: 4px;
+                                    }
+                              }
+                              .card:nth-child(odd) {
+                                    margin-left: 0;
+                              }
+                        }
+                  }
+            }
+      }
+      .how-we-work {
+            background: #F5F8FA;
+            margin-top: 48px;
+            h1 {
+                  @include title(0);
+                  padding-top:72px;
+                  margin-bottom: 20px;
+            }
+            .undertitle {
+                  font: normal normal 18px/166% TT Norms;
+                  display: block;
+                  text-align: center;
+                  margin: 0 323px 0;
+                  
+            }
+      .howhelp {
+            display: flex;
+            justify-content: center;
+            margin: 36px 182px 0;
+            .video {
+                  iframe {
+                        border-radius: 4px;
+                        border: unset;
+                  }
+                  button {
+                        display: block;
+                        @include btn();
+                        margin-top: 40px;
+                        .tri {
+                              @include triangle;
+                        }
+                  }
+                  .undervideo {
+                        display: block;
+                        font:normal normal   18px/134%  Inter;
+                        color: #304B93;
+                        width: 516px;
+                        margin-top: 30px;
+                        .free {
+                              @include fontcolor;
+
+                        }
+                  }
+            }
+        .right-list {
+              h4 {
+                    font:normal 500   24px/138%  Inter;
+                    margin: 0 0 24px 56px;
+                    width:60%;
+                    
+              }  
+               .description {
+                  @include description();
+            }
+      }
+      }
+
+}
+.results {
+      background: #F5F8FA;
+      h1 {
+            @include title(0);
+            padding-top:80px;
+            margin-bottom: 20px;
+      }
+      .undertitle {
+            font: normal normal 18px/166% TT Norms;
+            display: block;
+            text-align: center;
+            margin: 0 323px 0;
+            
+      }
+      .years {
+            display: flex;
+            justify-content: center;
+            margin: 38px 120px 0;
+            div {
+                  margin-left: 64px;
+            }
+            div:first-child {
+                  margin-left: unset;
+            }
+      }
+  
+}
+.offer-sec{
+      background: #F5F8FA;
+      padding-bottom: 48px;
+      h1 {
+            @include title(0);
+           padding-top:112px ;
+            margin-bottom: 20px;
+      }
+      .undertitle {
+            font: normal normal 18px/166% TT Norms;
+            display: block;
+            text-align: center;
+            margin: 0 366px 0;
+            
+      }
+      .benefits {
+            display: block;
+            font: normal bold 24px/146% TT Norms-Bold;
+            color: #367BF5;
+            text-align: center;
+            margin-top: 40px;
+      }
+      
+      .offer-row {
+            display: flex;
+            margin:20px 130px 0;
+            .item-offer {
+                  width: 580px;
+                  height: 112px;
+                  background: #FFFFFF;
+                  border: 1px solid rgba(0, 64, 148, 0.25);
+                  border-radius: 8px;
+                align-items: center;
+                justify-content: center;
+                  display: flex;
+                  span {
+                        display: flex;
+                        margin:0 12px 0 26px;
+                        font: normal normal 18px/136% TT Norms;
+                        align-items: center;
+                  }
+            }
+            .item-offer:last-child {
+               margin-left: 20px;
+            }
+      }
+      button {
+            
+                  @include buttonInNKO();
+                  display: block;
+      margin: 48px  auto 0 ;      
+      }
+      
+      
+}
+.partners-title {
+      h1 {
+            @include title(0);
+           padding-top:48px ;
+            margin:0 184px  48px;
+      }
+}
+.partnersWrappeGr {
+      @include partners()
+     }
+     .nko-title {
+      @include title(0);
+           padding-top:32px ;
+            margin:0 361px  48px;
+      
+}
+.nko {
+      @include nko()
+   }
+   .how-become-title {
+      @include title(0);
+            margin:74px 399px  20px;
+   }
+   .under-become {
+      font: normal normal 22px/124% TT Norms;
+      color: #202642;
+      display: block;
+      text-align: center;
+   }
+   .become-container {
+         display:flex;
+         margin: 40px 105px 0 223px;
+         overflow: hidden;
+         .form-container {
+            background: #F5F8FA;
+            border-radius: 8px;
+            padding: 0 0 0 28px;
+            margin-left: 64px;
+            height: 352px;
+               .form-row {
+                     display:flex;
+                     margin-right: 20px;
+                     margin-top: 30px;
+                     input {
+                           display: block;
+                           padding: 14px 0 14px 18px;
+                           background: #F5F8FA;
+                        border: 1px solid rgba(0, 64, 148, 0.3);
+                        border-radius: 8px;
+                     }
+                     ::placeholder {
+                        color: #004094;
+                        @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                  }
+                     input:last-child{
+                           margin-left: 20px;
+                     }
+               }
+               .form-row:first-child {
+                     margin-top: 48px;
+               }
+               .agreement {
+                  display: block;
+                  justify-content: start;
+                  margin-top: 10px;
+                  padding-bottom: 20px;
+                  .agreement-text {
+                        @include font(Inter, normal, 500, 12px, 136%, null);
+                        color: #0b1635;
+                        margin-left: 7px;
+                        span {
+                              color: #004094;
+                        }
+                  }
+            }
+            button {
+                  display: block;
+                  @include btn();
+                  background: #304b93;
+                  border-radius: 6px;
+                  margin: 40px 0 0 0;
+                  padding: 12px 40px;
+                  .tri {
+                        @include triangle;
+                  }
+            }
+
+         }
+   }
+   .all-answers {
+      @include allanswers();
+      margin-top:60px;
+ }
+}
+
+@media screen and(min-width:1500px) {
+      body {
+            width: 1440px;
+            margin: 0 auto 0;
+      }
+}
